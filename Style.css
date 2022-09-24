@@ -162,21 +162,39 @@ nav {
 }
 
 
-/*contributiongit branch -d <branch_name>s Section*/
-
 .contributions {
     margin: 0;
-    padding: 0;
     background-color: var(--black-color);
     color: var(--white-color);
+    align-items: center;
 }
 
+
 .contributionsTitle {
+    padding-top: 32px;
+    height: 180px;
     text-align: center;
     background-color: var(--grey-color);
 }
 
+.contributions__parrafo1 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 0.5;
+}
 
+.contributions__parrafo2{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contributions__parrafo1 span {
+    font-size: 62px;
+    text-align: end;
+    color: var(--firts-color);
+    position: relative;
+    top: 32px;
+}
 
 
 
@@ -244,6 +262,17 @@ nav {
 
     .heroImage__text {
         top: -190px;
+    }
+
+    /* Constributions */
+
+    .contributionsTitle {
+
+        height: 300px;
+    }
+
+    .contributions__parrafo1 {
+        line-height: 1;
     }
   
 
