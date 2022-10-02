@@ -263,9 +263,19 @@ text-align: left;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
   align-content: center;
 }
 
+.courseContent div {
+   margin: 16px;
+   text-align: center;
+}
+
+.courseContent div span {
+    font-size: 50px;
+    font-weight: bold;
+}
 
 
 
@@ -310,7 +320,10 @@ text-align: left;
     .contributionsIteam {
         grid-template-columns: repeat(2,50%);
     }
-
+    
+    .courseContent {
+        flex-direction: column;
+    }
 
     
   }
