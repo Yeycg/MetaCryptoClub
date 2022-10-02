@@ -311,6 +311,77 @@ text-align: left;
     padding: 16px;
 }
 
+/* Pilares*/
+.pillarsContainer {
+    text-align: center
+}
+
+ .pillarsContainer img {
+    width: 150px;
+    margin: 64px;
+
+ }
+
+ .pillarsTitle {
+    font-size: var(--Xlg);
+    font-weight: bold;
+ }
+
+ .pillars {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+ }
+
+ .pillars div {
+    width: 350px;
+ }
+
+
+ .pillars div p{
+    text-align: center;
+    font-size: var(--lg);
+    font-weight: bold;
+  
+ }
+
+ .pillarsContent p {
+    color: var(--firts-color);
+    font-weight: 500;
+ }
+
+
+ .pillarsClub {
+    --opacidad-negro: 0.8;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/Fondo\ pilares\ club.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+
+ .pillarsAcademy {
+    --opacidad-negro: 0.8;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/Fondo\ pilares\ academia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+
+ .pillarsResources {
+    --opacidad-negro: 0.8;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/Fondo\ pilares\ recursos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+
+
+
+
+
 
 
 
