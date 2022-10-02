@@ -258,6 +258,7 @@ text-align: left;
     background-color: #fff;
 }
 
+
 .courseContent {
   display: flex;
   flex-direction: row;
@@ -277,6 +278,38 @@ text-align: left;
     font-weight: bold;
 }
 
+/* About Us*/
+
+.aboutUs {
+    width: 100%;
+    height: 500px;
+    --opacidad-negro: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/Metacrypto-club-mockup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.aboutUs h2 {
+    text-align: center;
+    margin-top: 48px;
+    padding-top: 16px;
+    font-size: var(--XXlg);
+    margin-bottom: 32px;
+}
+
+.aboutUs div {
+   width: 500px;
+   margin: auto 32px;
+}
+
+.aboutUs div p {
+
+    text-align: center;
+    font-size: var(--lg);
+    font-weight: 500;
+    padding: 16px;
+}
 
 
 
@@ -320,12 +353,26 @@ text-align: left;
     .contributionsIteam {
         grid-template-columns: repeat(2,50%);
     }
+
+    /*course Content */
     
     .courseContent {
         flex-direction: column;
     }
+  
+    /* About Us */
+    .aboutUs  {
+        align-items: center;
+    }
 
-    
+    .aboutUs h2 {
+        font-size: var(--Xlg);
+    }
+
+    .aboutUs div {
+        width: 300px;
+        margin: auto;
+    }
   }
 
 
@@ -347,4 +394,7 @@ text-align: left;
         grid-template-columns: 1fr;
 
   }
+
+
+  
 }
