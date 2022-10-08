@@ -420,7 +420,52 @@ text-align: left;
 }
 
 
+/* Slyder (Carrucel)*/
 
+.slider {
+    background-color: var(--black-color);
+    padding: 40px 0;;
+}
+
+.sliderContainer {
+    display: grid;
+    grid-template-columns: 58px 1fr 58px;
+    align-items: center;
+    gap: 1en;
+}
+
+.sliderBody {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    --opacidad-negro: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/Fondo\ Multiusos.jpg");
+    background-size: cover;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
+}
+
+.sliderBodyShow {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.sliderTexts {
+    padding: 16px;
+    align-items: center;
+}
+
+.sliderArrow {
+    cursor: pointer;
+    width: 90%;
+}
+
+.sliderArrow:nth-of-type(2) {
+ justify-content: end;
+}
 
 
 
@@ -499,8 +544,9 @@ text-align: left;
     }
 
     .aboutFunderImage img {
-        width: 300px;
+        width: 340px;
     }
+
 
   }
 
