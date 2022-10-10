@@ -419,8 +419,58 @@ text-align: left;
     width: 350px;
 }
 
+/*          Carrucel    */
 
-/* Slyder (Carrucel)*/
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    background: var(--black-color);
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-wrapper {
+
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-button-next{
+    right: 26px !important;
+    color: var(--firts-color) !important;
+}
+
+.swiper-button-prev {
+    color: var(--firts-color) !important;
+}
+
+/* Slyder (Carrucel)
 
 .slider {
     background-color: var(--black-color);
@@ -466,7 +516,7 @@ text-align: left;
 .sliderArrow:nth-of-type(2) {
  justify-content: end;
 }
-
+*/
 
 
 

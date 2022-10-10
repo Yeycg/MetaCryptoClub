@@ -9,6 +9,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto:wght@100;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./AssetsWeb/Transparente gold.png">
+ <!-- Link Swiper's CSS -->
+ <link
+ rel="stylesheet"
+ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
     <title>Meta Crypto Club</title>
 </head>
 <body>
@@ -198,7 +203,42 @@
    </div>
    </section>
 
-   <section class="slider">
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">                
+            <h2>MODULO 1. Introducción a las criptomonedas</h2>
+            <p>Origen de las criptomonedas</p>
+            <p>Introducción a la blockchain</p>
+            <p>Introducción a las criptomonedas</p>
+            <p>Tipos de criptomonedas</p>
+            <p>Bitcoin</p>
+            <p>Ethereum</p>
+            <p>Fiat vs crypto</p></div>
+          
+            <div class="swiper-slide">
+            <h2>MODULO 2. Introducción a los exchanges, billeteras y DeFi</h2>
+            <p>Exchanges centralizados</p>
+            <p>Exchanges descentralizados</p>
+            <p>Billeteras</p>
+            <p>DeFi básico</p>
+            <p>Herramientas DeFi básicas</p>
+            <p>Cómo empezar a generar</p>
+            <p>ingresos pasivos</p></div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+   
+<!---   <section class="slider">
     <div class="sliderContainer">
         <img src="./AssetsWeb/arrow-left.svg" class="sliderArrow" id="before" alt="">
           <section class="sliderBody sliderBodyShow"  data-id="1">
@@ -244,10 +284,22 @@
            </section>
         <img src="./AssetsWeb/arrow-rigth.svg" class="sliderArrow" id="next" alt="">
     </div>
-   </section>
+   </section>-->
 
 </main>
     <script src="./menu.js"></script>
     <script src="./slyder.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </body>
 </html>                                                                                         
