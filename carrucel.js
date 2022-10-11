@@ -16,7 +16,7 @@ pagination: {
 breakpoints: {
   620: {
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 5,
   },
   680: {
     slidesPerView: 2,

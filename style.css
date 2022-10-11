@@ -424,15 +424,27 @@ text-align: left;
 
 .carrucelTitle {
     text-align: center;
-    margin-bottom: 64px;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .carrucelTitle h2 {
-    margin-bottom: 16px;
+    font-size: var(--Xlg);
+    margin-top: 32px;
+    
 }
 
 .carrucelTitle p {
+    margin: 16px auto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.carrucelTitle .simpleBtn {
     margin: 32px auto;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .parrafoFlotante {
@@ -441,30 +453,37 @@ text-align: left;
 }
 
 .swiper {
+    text-align: left;
     width: 100%;
     height: 100%;
   }
 
+  .swiper-slide p {
+    font-size: var(--md);
+    margin-bottom: 8px;
+    text-align: left;
+  }
+
+ .swiper-slide p:nth-child(1) {
+    font-size: var(--md);
+    font-weight: bold;
+    text-align: left;
+    line-height: 1;
+    padding-left: 16px;
+    color: var(--firts-color);
+ }
+
   .swiper-slide {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     font-size: 18px;
+    line-height: 0.5;
     background: var(--black-color);
+    padding: 16px;
 
     /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
     --opacidad-negro: 0.8;
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/Fondo\ Multiusos.jpg");
     border-radius: 16px;
@@ -474,6 +493,7 @@ text-align: left;
 
     display: flex;
     flex-wrap: nowrap;
+    padding-left: 32px;
   }
 
   .swiper-slide img {
@@ -570,9 +590,39 @@ text-align: left;
     .aboutFunderImage img {
         width: 340px;
     }
+     /* Carrucel */
+    .carrucelTitle h2 {
+        font-size: var(--lg);
+    }
 
+    .carrucelTitle p {
+        font-size: 12px;
+        font-weight: 400;
 
   }
+
+  .carrucelTitle .simpleBtn {
+    font-size: 12px;
+  }
+
+  .swiper-slide {
+    width: 300px !important; 
+  }
+
+  .swiper-slide p {
+    font-size: var(--sm);
+    margin-bottom: 8px;
+    text-align: left;
+  }
+
+  .swiper-slide p:nth-child(1) {
+    font-size: var(--sm);
+    line-height: 1.5;
+
+  }
+
+
+}
 
 
   @media (max-width: 600px) {
@@ -594,6 +644,14 @@ text-align: left;
 
   }
 
+  /*carrucel*/
 
+  .swiper-slide {
+    width: 220px !important; 
+  }
+
+  .swiper-slide p { 
+    line-height: 1;
+  }
   
 }
