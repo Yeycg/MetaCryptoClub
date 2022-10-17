@@ -4,7 +4,7 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
     
-slidesPerView: 1,
+slidesPerView: 2,
 spaceBetween: 10,
 // init: false,
 pagination: {
@@ -16,7 +16,7 @@ pagination: {
 breakpoints: {
   620: {
     slidesPerView: 1,
-    spaceBetween: 5,
+    spaceBetween: 100,
   },
   680: {
     slidesPerView: 2,
