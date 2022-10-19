@@ -529,7 +529,133 @@ text-align: left;
 }
 
 
+/* Plans */
 
+.plans {
+ 
+    margin-top: 60px;
+    
+}
+
+.plansHeader {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.plansHeaderText p:nth-child(1) {
+    font-size: var(--XXlg);
+    font-weight: bold;
+    text-align: center;
+}
+
+.plansHeaderText p:last-child {
+    font-size: var(--lg);
+    color: #cccc;
+    text-align: center;
+}
+
+.plansIteamContainer {
+    margin: auto;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+
+}
+
+.plansItemBackground {
+    background-color: #151515;
+    border: solid 1px  #cccc;
+    border-radius: 16px;
+    padding: 12px;
+
+}
+
+.plansItem2 .plansItemBackground {
+    border: solid 4px var(--firts-color);
+}
+
+.plansItemBackground p:first-child {
+    font-size: var(--lg);
+    color: var(--firts-color);
+}
+
+.plansItemBackground p span {
+    font-size: var(--Xlg);
+    font-weight: bold;
+}
+
+.plansItemBackground p:nth-child(3) {
+    color: var(--firts-color);
+}
+
+.plansItemBackground ul {
+    text-align: left;
+    line-height: 2;
+    color: #cccc;
+    
+}
+
+.plansItem1 p:last-child {
+    margin: 16px auto;
+}
+
+.plansItem2 p:last-child {
+    margin: 16px auto;
+}
+
+.plansItem3 p:last-child {
+    margin: 16px auto;
+}
+
+ /* Estilos unicos para el mas popular */
+.morePopular {
+    position: relative;
+}
+
+.morePopular p:nth-child(2) {
+    color: var(--firts-color); 
+}
+
+.morePopular p:nth-child(3) {
+    color: var(--white-color); 
+}
+
+.morePopular p:nth-child(4) {
+    color: var(--firts-color); 
+}
+
+
+#triangle-topleft {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-top: 152px solid var(--black-color);
+    border-left: 104px solid transparent;
+}
+
+
+    
+  
+  .text-block {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -147px;
+    left: -56px;
+    font-weight: bold;
+    padding: 5px;
+    transform: rotate(55deg);
+    align-items: center;
+  }
 
 
 
@@ -636,50 +762,60 @@ text-align: left;
 
   }
 
-  
+
 
 
 
 }
 
 
-  @media (max-width: 600px) {
+  @media (max-width: 400px) {
 
-
-    /* Constributions */
 
     .contributionsTitle {
-
         height: 300px;
     }
+
 
     .contributions__parrafo1 {
         line-height: 1;
     }
 
     .contributionsIteam {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1,90%);
+    }
 
+  /* Plans*/
+
+
+  .plansItemBackground { 
+    width: 80%;
+    margin: 32px auto;
   }
 
-  /*carrucel*/
-
-  .swiper-slide p {
-    font-size: 8px;
-
-  }
-
-  .swiper-slide p:nth-child(1) {
-    max-width: 200px;
-    font-size: 10px;
-    line-height: 1.5;
-
-  }
-
-  .slider-mobile {
-    display: block;
-
-  }
+  #triangle-topleft {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-top: 111px solid var(--black-color);
+    border-left: 74px solid transparent;
   
-}
-  
+  }
+
+  .text-block {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -114px;
+    left: -38px;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px;
+    transform: rotate(60deg);
+    align-items: center; }
+
+  }
+
+
