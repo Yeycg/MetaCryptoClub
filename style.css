@@ -660,18 +660,88 @@ text-align: left;
   /* Embajadore section*/
 
   .embajadoresContainer {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 700px;
+    height: auto;
+    margin-top: 32px;
     --opacidad-negro: 0.5;
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(./AssetsWeb/Fondo\ programa\ embajadores.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    align-items: center;
+}
+
+.embajadoresContainer p:nth-child(1) {
+    max-width: 900px;
+    margin: 32px auto 16px;
+    font-size: var(--XXlg);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 16px;
+}
+
+.embajadoresContainer .embajadoresSecondTitle {
+    font-size: var(--Elg);
+    text-align: center;
+    max-width: 900px;
+    color: #cccc;
+}
+
+.embajadoresBeneficios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+
+}
+
+.embajadoresBeneficios p {
+    font-size: var(--lg);
+}
+
+.embajadoresBeneficios img {
+    width: 150px;
+    margin: 6px;
+}
+
+ .embajadoresSmall {
+    font-size: var(--lg);
+    font-weight: bold;
+    text-align: end;
 }
 
 
 
 @media (max-width: 768px) { 
+
+    /*Embajadores*/ 
+
+    .embajadoresContainer p:nth-child(1) {
+        font-size: var(--lg);
+        width: 300px;
+    }
+
+    .embajadoresContainer .embajadoresSecondTitle {
+        font-size: var(--md);
+        width: 300px;
+        margin: auto
+    }
+
+    .embajadoresBeneficios img {
+        width: 100px;
+    }
+
+    .embajadoresBeneficios p {
+        font-size: var(--md);
+    }
+
+    .embajadoresSmall {
+        padding: 16px;
+    }
+    
 
     /* Desktop menu*/
 
