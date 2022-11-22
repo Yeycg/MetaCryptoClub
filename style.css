@@ -714,34 +714,60 @@ text-align: left;
 }
 
 
+.callToActionContainer {
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+}
+
+.callToActionContent {
+    max-width: 900px;
+    margin: auto;
+}
+
+.callToActionContainer .callToActionContent img {
+    width: 250px;
+}
+
+.callToActionContent  p:nth-child(2) {
+    margin: auto;
+    font-size: var(--XXlg);
+}
+
+.callToActionContent p:nth-child(3) {
+    font-size: var(--lg);
+    line-height: 2;
+}
+
+
 
 @media (max-width: 768px) { 
 
-    /*Embajadores*/ 
+    /* Call To Action*/
 
-    .embajadoresContainer p:nth-child(1) {
-        font-size: var(--lg);
-        width: 300px;
+    .callToActionContainer {
+        padding: 10px;
     }
 
-    .embajadoresContainer .embajadoresSecondTitle {
+    .callToActionContainer .callToActionContent img {
+        width: 180px;
+    }
+
+    .callToActionContent {
+        width: 600px;
+    }
+
+    .callToActionContent  p:nth-child(2) {
+        font-size: var(--Xlg);
+        width: 500px;
+    }
+
+    .callToActionContent p:nth-child(3) {
         font-size: var(--md);
-        width: 300px;
-        margin: auto
-    }
-
-    .embajadoresBeneficios img {
-        width: 100px;
-    }
-
-    .embajadoresBeneficios p {
-        font-size: var(--md);
-    }
-
-    .embajadoresSmall {
-        padding: 16px;
+       
     }
     
+
 
     /* Desktop menu*/
 
@@ -844,6 +870,34 @@ text-align: left;
 
   }
 
+  
+    /*Embajadores*/ 
+
+    .embajadoresContainer p:nth-child(1) {
+        font-size: var(--lg);
+        width: 300px;
+    }
+
+    .embajadoresContainer .embajadoresSecondTitle {
+        font-size: var(--md);
+        width: 300px;
+        margin: auto
+    }
+
+    .embajadoresBeneficios img {
+        width: 100px;
+    }
+
+    .embajadoresBeneficios p {
+        font-size: var(--md);
+    }
+
+    .embajadoresSmall {
+        padding: 16px;
+    }
+    
+
+    
 
 
 
@@ -852,6 +906,31 @@ text-align: left;
 
 
   @media (max-width: 400px) {
+
+
+        /* Call To Action*/
+
+        .callToActionContainer {
+            padding: 6px;
+        }
+    
+        .callToActionContainer .callToActionContent img {
+            width: 150px;
+        }
+    
+        .callToActionContent {
+            width: 300px;
+        }
+    
+        .callToActionContent  p:nth-child(2) {
+            font-size: var(--Elg);
+            width: 300px;
+        }
+    
+        .callToActionContent p:nth-child(3) {
+            font-size: var(--md);
+           
+        }
 
 
     .contributionsTitle {
