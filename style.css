@@ -739,6 +739,43 @@ text-align: left;
     line-height: 2;
 }
 
+/* FAQ*/
+
+.FAQ { 
+    margin: auto;
+    width: 90%;
+    max-width: 120em;
+    background-color: var(--black-color);
+    padding: 32px;
+}
+
+.FAQ .bloque{
+
+    margin: 0 0 16px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.FAQ .FAQ-titulo {
+    border: solid 1px var(--firts-color);
+    margin: 0 0 16px;
+    padding: 16px;
+}
+
+.FAQ .contenido {    
+    border: solid 1px var(--firts-color);
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.FAQ .bloque.activo .contenido {
+    height: 64px;
+    padding: 16px;
+}
+
+
 
 
 @media (max-width: 768px) { 
