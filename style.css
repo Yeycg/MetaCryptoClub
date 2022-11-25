@@ -749,6 +749,13 @@ text-align: left;
     padding: 32px;
 }
 
+.FAQ > h2{
+    margin: 16px;
+    text-align: center;
+}
+
+
+
 .FAQ .bloque{
 
     margin: 0 0 16px;
@@ -760,6 +767,7 @@ text-align: left;
     border: solid 1px var(--firts-color);
     margin: 0 0 16px;
     padding: 16px;
+    font-size: var(--md);
 }
 
 .FAQ .contenido {    
@@ -779,32 +787,6 @@ text-align: left;
 
 
 @media (max-width: 768px) { 
-
-    /* Call To Action*/
-
-    .callToActionContainer {
-        padding: 10px;
-    }
-
-    .callToActionContainer .callToActionContent img {
-        width: 180px;
-    }
-
-    .callToActionContent {
-        width: 600px;
-    }
-
-    .callToActionContent  p:nth-child(2) {
-        font-size: var(--Xlg);
-        width: 500px;
-    }
-
-    .callToActionContent p:nth-child(3) {
-        font-size: var(--md);
-       
-    }
-    
-
 
     /* Desktop menu*/
 
@@ -932,12 +914,46 @@ text-align: left;
     .embajadoresSmall {
         padding: 16px;
     }
+
+
+        /* Call To Action*/
+
+        .callToActionContainer {
+            padding: 10px;
+        }
     
-
+        .callToActionContainer .callToActionContent img {
+            width: 180px;
+        }
     
+        .callToActionContent {
+            width: 600px;
+        }
+    
+        .callToActionContent  p:nth-child(2) {
+            font-size: var(--Xlg);
+            width: 500px;
+        }
+    
+        .callToActionContent p:nth-child(3) {
+            font-size: var(--md);
+           
+        }
+    
+          /*FAQ*/
 
+    .FAQ .FAQ-titulo {
+        font-size: var(--sm);
+    }
+    
+    .FAQ .contenido {    
+        font-size: 12px;
+    }
 
-
+    .FAQ .bloque.activo .contenido {
+        height: auto;
+        padding: 16px;
+    }
 
 }
 
