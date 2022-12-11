@@ -10,6 +10,7 @@
     --Elg: 28px;
     --Xlg: 32px;
     --XXlg: 48px;
+    --Font-family-2: 'Antic Didone', sans-serif;
 }
 
 html {
@@ -23,7 +24,7 @@ body {
     padding: 0;
     background-color: var(--black-color);
     color: var(--white-color);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'Antic Didone', sans-serif;
     overflow-x: hidden;
 }
 
@@ -186,6 +187,7 @@ text-align: left;
     background-color: var(--black-color);
     color: var(--white-color);
     align-items: center;
+
 }
 
 
@@ -197,14 +199,16 @@ text-align: left;
 }
 
 .contributions__parrafo1 {
-    font-size: 18px;
-    font-weight: bold;
+    font-family: var(--Font-family-2);
+    font-size: var(--Xlg);
+    font-weight: 400;
     line-height: 0.5;
 }
 
 .contributions__parrafo2{
-    font-weight: bold;
-    font-size: 16px;
+    font-family: var(--Font-family-2);
+    font-weight: 500;
+    font-size: 26px;
 }
 
 .contributions__parrafo1 span {
@@ -215,10 +219,17 @@ text-align: left;
     top: 32px;
 }
 
+.contributions__parrafo1 .span-experto {
+    color: var(--firts-color);
+    font-size: var(--Xlg);
+    position: static;
+}
+
 
 .contributions__items h2 {
     text-align: center;
     margin: 32px auto;
+    font-size: var(--Xlg);
 
 }
 .contributionsIteam {
@@ -281,8 +292,9 @@ text-align: left;
 /* About Us*/
 
 .aboutUs {
-    width: 100%;
-    height: 500px;
+    margin: auto;
+    width: 90%;
+    height: 950px;
     --opacidad-negro: 0.5;
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/Metacrypto-club-mockup.jpg");
     background-size: cover;
@@ -299,21 +311,21 @@ text-align: left;
 }
 
 .aboutUs div {
-   width: 500px;
-   margin: auto 32px;
+   width: 600px;
+   margin: 150px 32px;
 }
 
 .aboutUs div p {
 
     text-align: center;
-    font-size: var(--lg);
+    font-size: var(--Elg);
     font-weight: 500;
     padding: 16px;
 }
 
 /* Pilares*/
 .pillarsContainer {
-    text-align: center
+    text-align: center;
 }
 
  .pillarsContainer img {
@@ -714,10 +726,13 @@ text-align: left;
 }
 
 
+
 .callToActionContainer {
+    display: flex;
     width: 100%;
     text-align: center;
     padding: 16px;
+    height: 800px;
 }
 
 .callToActionContent {
@@ -842,6 +857,61 @@ text-align: left;
 }
 
 
+  /* Footer */
+
+    footer {
+        background-color: #151515;
+        text-align: center;
+    }
+
+    .redes-sociales-container{
+        text-align: center;
+        width: 300px;
+        margin: auto;
+        padding-top: 32px;
+        font-size: var(--sm);
+ 
+    }
+
+    .redes-sociales-container  p:nth-child(1) {
+        font-weight: bold;
+        font-size: 26px;
+    }
+
+    .redes-sociales-container  p:nth-child(2) {
+        font-size: var(--sm)
+    }
+
+
+
+   .icono-redes-sociales {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+   .icono-redes-sociales img {
+    width: 40px;
+  }
+
+ .terminos {
+    margin: auto;
+    width: 400px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+
+ .copyright {
+    font-size: 12px;
+    padding-bottom: 16px;
+ }
+
 
 @media (max-width: 768px) { 
 
@@ -877,11 +947,20 @@ text-align: left;
         height: 24px;
         width: 170px;
     }
+
+
     /* Contributions */
 
     .contributionsIteam {
         grid-template-columns: repeat(2,50%);
     }
+
+    .contributions__parrafo1, .contributions__parrafo2 {
+        font-size: var(--lg);
+    }
+
+    .contributions__parrafo1 .span-experto {
+        font-size: var(--lg); }
 
     /*course Content */
     
@@ -891,6 +970,9 @@ text-align: left;
   
     /* About Us */
     .aboutUs  {
+            margin: auto;
+            width: 100%;
+            height: 600px;
         align-items: center;
     }
 
@@ -899,8 +981,12 @@ text-align: left;
     }
 
     .aboutUs div {
-        width: 300px;
+        width: 260px;
         margin: auto;
+    }
+
+    .aboutUs div p {
+        font-size: var(--md);
     }
   
     /* About funder*/
@@ -908,6 +994,7 @@ text-align: left;
 
     .aboutFunderContent {
         padding: 0px;
+        margin-top: 32px;
     }
 
     .aboutFunderText {
@@ -919,7 +1006,7 @@ text-align: left;
     }
 
 
-    
+
      /* Carrucel */
     .carrucelTitle h2 {
         font-size: var(--lg);

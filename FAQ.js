@@ -9,10 +9,10 @@ const FAQtitulo = document.querySelectorAll('.FAQ-titulo');
     FAQtitulo[i].addEventListener('click', ()=>{
 
         bloque.forEach ( (cadaBloque , i)=>{
-            bloque[i].classList.remove('activo')
+            bloque[i].classList.toggle('activo') // si colocamo . remove en vez de toggle se abrira uno por uno 
         })
 
-        bloque[i].classList.add('activo')
+        //bloque[i].classList.add('activo') lo desactive, con esta linea podemos abrir uno por uno pero siempre el ultimo quedara activado
     })
 
  })
