@@ -785,6 +785,63 @@ text-align: left;
 
 
 
+/* SECCION TESTIMONIOS */
+
+
+.carrucelTitle--testimonio {
+    margin: 64px;
+}
+
+
+.swiper-modificated {
+    width: 70%;
+}
+
+
+.swiper-slide--testimonio {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonios__item1 {
+ width: 150px;
+ height: 150px;
+ border-radius: 50%;
+ background-image: url(./AssetsWeb/Testimonio\ 1.jpg);
+ background-size: cover;
+ background-position-x: center;
+ background-repeat: no-repeat;
+}
+
+.testimonios__item2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url(./AssetsWeb/Testimonio\ 2.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+   }
+
+   .testimonios__item3 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url(./AssetsWeb/Testimonio\ 3.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+   }
+
+
+.swiper-slide--testimonio p {
+    text-align: center;
+}
+
+
 
 @media (max-width: 768px) { 
 
@@ -860,6 +917,9 @@ text-align: left;
     .aboutFunderImage img {
         width: 340px;
     }
+
+
+    
      /* Carrucel */
     .carrucelTitle h2 {
         font-size: var(--lg);
@@ -955,8 +1015,13 @@ text-align: left;
         padding: 16px;
     }
 
-}
 
+
+/* SECCION TESTIMONIOS */
+.swiper-modificated {
+    width: 100%;
+}
+}
 
   @media (max-width: 400px) {
 
