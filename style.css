@@ -1028,11 +1028,11 @@ text-align: left;
     }
 
     .contributions__parrafo1, .contributions__parrafo2 {
-        font-size: var(--lg);
+        font-size: var(--md);
     }
 
     .contributions__parrafo1 .span-experto {
-        font-size: var(--lg); }
+        font-size: var(--md); }
 
     /*course Content */
     
@@ -1261,6 +1261,13 @@ text-align: left;
     padding: 5px;
     transform: rotate(60deg);
     align-items: center; }
+
+
+    /* Footer*/
+
+    .terminos {
+        width: 290px;
+    }
 
   }
 
