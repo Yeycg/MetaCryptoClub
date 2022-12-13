@@ -18,6 +18,7 @@ html {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -26,7 +27,6 @@ body {
     background-color: var(--black-color);
     color: var(--white-color);
     font-family: 'Montserrat', 'Antic Didone', sans-serif;
-    overflow-x: hidden;
 }
 
 h1,h2,h3,h4 {
@@ -334,6 +334,7 @@ text-align: left;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .aboutUs h2 {
@@ -548,6 +549,7 @@ text-align: left;
     --opacidad-negro: 0.8;
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/Fondo\ Multiusos.jpg");
     border-radius: 16px;
+    
   }
 
   .swiper-wrapper {
@@ -741,6 +743,8 @@ text-align: left;
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
+    background-attachment: fixed;
+
 }
 
 .embajadoresContainer p:nth-child(1) {
