@@ -17,6 +17,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -80,6 +81,27 @@ nav {
     display: flex;
     list-style: none;
 
+}
+
+.link {
+    position: relative;
+}
+
+.link::after {
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: var(--firts-color);
+    position: absolute;
+    bottom: -5px;
+    right: 50%;
+    transition: all .5s;
+    will-change: width;
+}
+
+.link:hover::after {
+    width: 100%;
+    right: 0;
 }
 
 .menuDesktop ul a{
@@ -177,6 +199,18 @@ text-align: left;
     background-color: var(--white-color);
     color: var(--black-color);
     border-radius: 16px;
+
+}
+
+.contributions__items a  {
+    text-decoration: none;
+    color: #000;
+} 
+
+ .contributions__items .simpleBtn:hover {
+    color: rgb(10, 10, 10) ;
+  box-shadow: 0 4px 16px rgb(225,202,113);
+  transition: all 0.2s ease;
 
 }
 
@@ -459,6 +493,18 @@ text-align: left;
     font-weight: bold;
 }
 
+.carrucelTitle a  {
+    text-decoration: none;
+    color: #000;
+} 
+
+.carrucelTitle .simpleBtn:hover {
+    color: rgb(10, 10, 10) ;
+  box-shadow: 0 4px 16px rgb(225,202,113);
+  transition: all 0.2s ease;
+
+}
+
 .parrafoFlotante {
     text-align: center;
     font-size: var(--Elg);
@@ -538,6 +584,18 @@ text-align: left;
 
 .slider-mobile {
     display: none;
+}
+
+ .plansIteamContainer a  {
+    text-decoration: none;
+    color: #000;
+} 
+
+.plansIteamContainer .simpleBtn:hover {
+    color: rgb(10, 10, 10) ;
+  box-shadow: 0 4px 16px rgb(225,202,113);
+  transition: all 0.2s ease;
+
 }
 
 
@@ -896,6 +954,16 @@ text-align: left;
     width: 40px;
   }
 
+  .icono-redes-sociales a {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  .icono-redes-sociales a img:hover {
+    width: 50px;
+    transition: all 0.60s 0s ease;
+  }
+
  .terminos {
     margin: auto;
     width: 400px;
@@ -905,6 +973,10 @@ text-align: left;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+ }
+
+ .terminos a {
+    color: var(--white);
  }
 
  .copyright {
