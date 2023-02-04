@@ -40,6 +40,7 @@ h1,h2,h3,h4 {
 }
 
 
+
 /* Menu Desktop */
 
 nav {
@@ -217,6 +218,7 @@ text-align: left;
 /* Contribution section*/
 
 .contributions {
+    width: 100;
     margin: 0;
     background-color: var(--black-color);
     color: var(--white-color);
@@ -259,6 +261,11 @@ text-align: left;
     position: static;
 }
 
+.contributions__items {
+    margin: auto;
+    max-width: 1080px;
+}
+
 
 .contributions__items h2 {
     text-align: center;
@@ -292,7 +299,8 @@ text-align: left;
 /* Social Information */
 
 .socialInformation {
-    width: 100%;
+    margin: auto;
+    max-width: 1080px;
     background-color: var(--black-color);
 
 }
@@ -327,8 +335,8 @@ text-align: left;
 
 .aboutUs {
     margin: auto;
-    width: 90%;
-    height: 950px;
+    max-width: 1080px;
+    height: auto;
     --opacidad-negro: 0.5;
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/Metacrypto-club-mockup.jpg");
     background-size: cover;
@@ -340,14 +348,14 @@ text-align: left;
 .aboutUs h2 {
     text-align: center;
     margin-top: 48px;
-    padding-top: 16px;
+    padding-top: 6px;
     font-size: var(--XXlg);
     margin-bottom: 32px;
 }
 
 .aboutUs div {
    width: 600px;
-   margin: 150px 32px;
+  
 }
 
 .aboutUs div p {
@@ -363,18 +371,13 @@ text-align: left;
     text-align: center;
 }
 
- .pillarsContainer img {
-    width: 150px;
-    margin: 64px;
-
- }
-
  .pillarsTitle {
-    font-size: var(--Xlg);
+    font-size: var(--XXlg);
     font-weight: bold;
  }
 
  .pillars {
+  
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -419,10 +422,10 @@ text-align: left;
 
  .pillarsResources {
     --opacidad-negro: 0.8;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/Fondo\ pilares\ recursos.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/Fondo\ pilares\ recursos.jpg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
  }
 
 
@@ -430,7 +433,8 @@ text-align: left;
 
 
  .aboutFunderContainer {
-    width: 100%;
+    margin: auto;
+    max-width: 1080px;
 
 }
  
@@ -610,7 +614,8 @@ text-align: left;
 }
 
 .plansHeader {
-
+    max-width: 1080px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -649,7 +654,7 @@ text-align: left;
 
 }
 
-.plansItem2 .plansItemBackground {
+.plansItem1 .plansItemBackground {
     border: solid 4px var(--firts-color);
 }
 
@@ -672,6 +677,11 @@ text-align: left;
     line-height: 2;
     color: #cccc;
     
+}
+
+.plansItem1 .plansItemBackground p:first-child{
+    font-size: var(--Xlg);
+
 }
 
 .plansItem1 p:last-child {
@@ -704,10 +714,20 @@ text-align: left;
 }
 
 
-#triangle-topleft {
+.triangle-topleft{
     position: absolute;
     top: 2px;
-    right: 0px;
+    right: 2px;
+    width: 0;
+    height: 0;
+    border-top: 152px solid var(--black-color);
+    border-left: 104px solid transparent;
+}
+
+.triangle-topleft2 {
+    position: absolute;
+    top: 2px;
+    right: 2px;
     width: 0;
     height: 0;
     border-top: 152px solid var(--black-color);
@@ -718,16 +738,35 @@ text-align: left;
     
   
   .text-block {
+    font-size: 16px;
     color: white;
     text-align: center;
     position: relative;
     top: -147px;
-    left: -56px;
+    left: -82px;
     font-weight: bold;
     padding: 5px;
     transform: rotate(55deg);
     align-items: center;
   }
+
+  .text-block2{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -150px;
+    left: -85px;
+    font-weight: bold;
+    padding: 5px;
+    transform: rotate(55deg);
+    align-items: center;
+  }
+
+
+.desactive {
+    opacity: 0.5;
+}
 
   /* Embajadore section*/
 
