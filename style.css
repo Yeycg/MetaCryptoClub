@@ -64,7 +64,46 @@ h1,h2,h3,h4 {
   transition: all 0.2s ease;
 
 }
+/* Botones generales */
 
+.simpleBtn--login {
+    background-color: var(--black-color);
+    border: 1px solid var(--firts-color);
+    color: white;
+}
+
+
+.simpleBtn:hover {
+  color: white;
+  box-shadow: 0 4px 16px rgb(225,202,113);
+  transition: all 0.2s ease;
+
+}
+
+.bntServicios {
+    border: none;
+    margin-top: 16px;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    width: 231px;
+    text-align: center;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border-radius: 16px;
+}
+
+.bntServicios:hover {
+      color: rgb(10, 10, 10) ;
+      box-shadow: 0 4px 16px rgb(225,202,113);
+      transition: all 0.2s ease;
+    
+    }
+
+.btn-mobile-menu {
+    display: none;
+    margin: 16px;
+}
 /* Menu Desktop */
 
 nav {
@@ -90,24 +129,7 @@ nav .btn-login a {
     text-decoration: none;
 }
 
-.simpleBtn--login {
-    background-color: var(--black-color);
-    border: 1px solid var(--firts-color);
-    color: white;
-}
 
-
-.simpleBtn:hover {
-  color: white;
-  box-shadow: 0 4px 16px rgb(225,202,113);
-  transition: all 0.2s ease;
-
-}
-
-.btn-mobile-menu {
-    display: none;
-    margin: 16px;
-}
 
 .logo {
     margin: 16px;
@@ -728,6 +750,51 @@ text-align: left;
 
 .plansItem3 p:last-child {
     margin: 16px auto;
+}
+
+
+/* Modal */
+
+.modal {
+ display: none;
+ background: rgba(0, 0, 0, 0.4);
+ width: 100vw;
+ height: 100vh;
+ top: 0;
+ left: 0;
+ position: fixed;
+ padding: 20px;
+ justify-content: center;
+ align-items: center;
+ z-index: 100;
+}
+
+.modalContainer {
+ background-color: grey;
+ min-width: 300px;
+ max-width: 80%;
+ max-width: 800px;
+ min-height: 300px;
+ max-height: 90%;
+ padding: 20px;
+ border: solid 5px var(--firts-color);
+ position: relative;
+}
+
+.closeModal {
+    background-color: var(--firts-color);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    cursor: pointer;
 }
 
  /* Estilos unicos para el mas popular */

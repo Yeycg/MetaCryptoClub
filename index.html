@@ -509,7 +509,7 @@
             <li>Certificado de finalización</li>
           </ul>
          </div>
-         <a href=""><p class="simpleBtn">SELECCIONAR PLAN</p></a>
+         <button onclick="openModal()" class="bntServicios">SELECCIONAR PLAN</button>
        </div>
        
 
@@ -541,6 +541,36 @@
 
  </section>
 
+ 
+ <section>
+
+  <div class="modal" id="modalAdd">
+    <div class="modalContainer">
+      <div class="closeModal" onclick="closeModal()">X</div>
+      <div class="modalContent">
+      <h2>Métodos de pago</h2>
+      <div class="pagos">
+        <div class="pagosTarjeta">
+          <img src="" alt="">
+          <img src="" alt="">
+          <button>pagar</button>
+        </div>
+        <div class="pagosCrypto">
+          <img src="" alt="">
+          <button>pagar</button>
+        </div>
+      </div>
+      <label><input type="checkbox" id="cbox1" value="first_checkbox"> (*)  Acepto la Política de confidencialidad, la Política de cookies y los Términos del servicio.</label>
+      <p>¿Tienes dudas? Contáctanos</p>
+      </div>
+      
+     
+      
+    </div>
+  
+  </div>
+   </section>
+
 
  <section class="embajadoresContainer"> 
   <div class="embajadoresContent">
@@ -561,6 +591,7 @@
    </div>
 
  </section>
+
 
 
 <section class="callToActionContainer">
@@ -736,5 +767,8 @@
     <script src="./carrucel.js"></script>
     <!-- FAQ -->
     <script src="./FAQ.js"></script>
+
+    <!-- Modal -->
+    <script src="modal.js"></script>
 </body>
 </html>                                                                                         
