@@ -797,6 +797,62 @@ text-align: left;
     cursor: pointer;
 }
 
+.modalContent {
+    text-align: center;
+}
+
+.modalContent h2 {
+    text-align: center;
+
+}
+
+.pagos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 32px;
+}
+
+
+
+.pagosTarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagosTarjeta .pagosTarjeta1 {
+    width: 300px;
+}
+
+
+.pagosTarjeta .pagosTarjeta2 {
+    width: 100px;
+}
+
+
+.pagosCrypto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+.pagosCrypto img {
+    width: 300px;
+}
+
+.pagos button {
+    margin-top: 32px;
+}
+
+
  /* Estilos unicos para el mas popular */
 .morePopular {
     position: relative;
