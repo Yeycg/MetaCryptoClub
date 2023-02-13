@@ -770,8 +770,8 @@ text-align: left;
 }
 
 .modalContainer {
- background-color: grey;
- min-width: 300px;
+ background-color: var(--black-color);
+ min-width: 275px;
  max-width: 80%;
  max-width: 800px;
  min-height: 300px;
@@ -802,13 +802,18 @@ text-align: left;
 }
 
 .modalContent h2 {
+    font-family: var(--Font-family-2);
     text-align: center;
+    font-size: var(--XXlg);
 
 }
 
 .pagos {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 24px;
+    font-weight: bold   ;
     justify-content: space-around;
     padding: 32px;
 }
@@ -824,6 +829,8 @@ text-align: left;
 
 .pagosTarjeta .pagosTarjeta1 {
     width: 300px;
+    animation: 0.1s ease infinite  up-down ;
+    
 }
 
 
@@ -837,6 +844,35 @@ text-align: left;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+
+/* Modal footer */
+
+.politicasContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.politicasContainer a {
+    color: white;
+}
+
+#cbox1 {
+    width: 20px;
+    height: 20px;
+}
+
+.PoliticasContacto {
+    font-family: var(--Font-family-2);
+    font-size: var(--Xlg);
+}
+
+.PoliticasContacto span a {
+    font-family: 'Montserrat', 'Antic Didone', sans-serif;
+    font-family: var(--lg);
+    color: var(--firts-color);
 }
 
 
