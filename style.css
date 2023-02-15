@@ -1526,6 +1526,11 @@ text-align: left;
     .terminos {
         width: 290px;
     }
+  
+    .modal {
+        width: 100vw;
+        height: 100%;
+       }
 
   }
 
