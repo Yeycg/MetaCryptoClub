@@ -774,7 +774,6 @@ text-align: left;
  min-width: 275px;
  max-width: 80%;
  max-width: 800px;
- min-height: 600px;
  padding: 20px;
  border: solid 5px var(--firts-color);
  position: relative;
@@ -1527,8 +1526,8 @@ text-align: left;
     }
   
     .modal {
-        width: 90vw;
-        height: 100%;
+        width: 100vw;
+        height: auto;
         overflow: auto;
        }
 
