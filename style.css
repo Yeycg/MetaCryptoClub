@@ -1579,10 +1579,14 @@ text-align: left;
     justify-content: center;
 }
 
+.politicasContainer label {
+    font-size: 10px;
+}
+
 
 #cbox1 {
-    width: 20px;
-    height: 20px;
+    width: 12px;
+    height: 12px;
 }
 
 .PoliticasContacto {
@@ -1594,10 +1598,6 @@ text-align: left;
     font-family: var(--lg);
     color: var(--firts-color);
 }
-
-
-
-
 
 
 .pagosCrypto img {
