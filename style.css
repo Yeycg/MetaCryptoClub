@@ -1525,11 +1525,86 @@ text-align: left;
         width: 290px;
     }
   
-    .modal {
-        width: 100vw;
-        height: auto;
-        overflow: auto;
-       }
+    /* Modal */
+    
+.modalContent h2 {
+    font-size: var(--lg);
+
+}
+
+.pagos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 24px;
+    font-weight: bold   ;
+    justify-content: space-around;
+    padding: 32px;
+}
+
+
+
+.pagosTarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagosTarjeta .pagosTarjeta1 {
+    width: 100px;
+    animation: 0.1s ease infinite  up-down ;
+    
+}
+
+
+.pagosTarjeta .pagosTarjeta2 {
+    width: 50px;
+}
+
+
+.pagosCrypto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Modal footer */
+
+.politicasContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#cbox1 {
+    width: 20px;
+    height: 20px;
+}
+
+.PoliticasContacto {
+    font-size: var(--md);
+}
+
+.PoliticasContacto span a {
+    font-family: 'Montserrat', 'Antic Didone', sans-serif;
+    font-family: var(--lg);
+    color: var(--firts-color);
+}
+
+
+
+
+
+
+.pagosCrypto img {
+    width: 100px;
+}
+
+
 
   }
 
