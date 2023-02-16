@@ -831,9 +831,28 @@ text-align: left;
 
 .pagosTarjeta .pagosTarjeta1 {
     width: 300px;
-    animation: 0.1s ease infinite  up-down ;
     
 }
+
+.pagosTarjeta1 {
+    animation-name: moverArribaAbajo;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes moverArribaAbajo {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(10px);
+    }
+  }
+  
+  
+  
 
 
 .pagosTarjeta .pagosTarjeta2 {
@@ -847,6 +866,21 @@ text-align: left;
     align-items: center;
     justify-content: space-between;
 }
+
+.pagosCryptoimg {   
+        animation: rotateSphere 10s infinite linear;
+        transform-style: preserve-3d;
+      }
+      
+      @keyframes rotateSphere {
+        0% {
+          transform: rotateX(0) rotateY(0);
+        }
+        100% {
+          transform: rotateX(360deg) rotateY(360deg);
+        }
+      }
+      
 
 /* estilos de los botones en modal */
 
