@@ -1616,7 +1616,7 @@ text-align: left;
 }
 
 
-#cbox1 {
+#checkbox{
     width: 12px;
     height: 12px;
 }
@@ -1636,7 +1636,7 @@ text-align: left;
     width: 100px;
 }
 
-.bntServicios2 {
+#button1, #button2{
     
     margin-top: 16px;
     font-size: 10px;
@@ -1645,7 +1645,6 @@ text-align: left;
     width: 120px;
 
 }
-
 
 
   }
