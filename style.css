@@ -424,6 +424,7 @@ text-align: left;
 
 /* Pilares*/
 .pillarsContainer {
+    max-width: 100%;
     text-align: center;
 }
 
@@ -461,6 +462,7 @@ text-align: left;
 
 
  .pillarsClub {
+    width: 100%;
     --opacidad-negro: 0.8;
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/Fondo\ pilares\ club.jpg");
     background-size: cover;
@@ -469,6 +471,7 @@ text-align: left;
  }
 
  .pillarsAcademy {
+    width: 100%;
     --opacidad-negro: 0.8;
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/Fondo\ pilares\ academia.jpg");
     background-size: cover;
@@ -477,6 +480,7 @@ text-align: left;
  }
 
  .pillarsResources {
+    width: 100%;
     --opacidad-negro: 0.8;
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/Fondo\ pilares\ recursos.jpg.jpg");
     background-size: cover;
@@ -844,6 +848,34 @@ text-align: left;
     justify-content: space-between;
 }
 
+/* estilos de los botones en modal */
+
+#button1, #button2 {
+    border: none;
+    margin-top: 16px;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    width: 231px;
+    text-align: center;
+
+    border-radius: 16px;
+}
+
+
+#button1 a {
+    text-decoration: none;
+    color: inherit;
+   }
+   
+
+
+#button2 a {
+ text-decoration: none;
+ color: inherit;
+}
+
+
 
 /* Modal footer */
 
@@ -857,7 +889,7 @@ text-align: left;
     color: white;
 }
 
-#cbox1 {
+#checkbox {
     width: 20px;
     height: 20px;
 }
