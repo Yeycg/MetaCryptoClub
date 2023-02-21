@@ -6,3 +6,5 @@ btnMenuMobile.addEventListener('click', toggleMobilemenu) ;
 function toggleMobilemenu() {
     menuMobile.classList.toggle ('inactive');
 }
+
+
