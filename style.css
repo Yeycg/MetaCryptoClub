@@ -667,6 +667,8 @@ text-align: left;
 
 /* .contenido de la academia */
 
+
+
 .cardsContainer {
     width: 100%;
     margin: auto;
@@ -701,9 +703,24 @@ text-align: left;
     padding: 16px;
     border-radius: 16px;
     margin-top: 16px;
+    display: none; /* ocultamos el contenido por defecto */
 }
 
+.card-body.visible {
+    display: block; /* mostramos el contenido cuando la clase visible se agrega al elemento */
+}
 
+.card-toggle {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.card-toggle:hover {
+    background-color: #f2f2f2;
+}
 
 .card1 {
     background-image: url(./AssetsWeb/Fondo\ pilares\ recursos.jpg.jpg);
@@ -711,6 +728,45 @@ text-align: left;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.card-body {
+    display: none;
+  }
+  
+  .card-toggle {
+    background-color: var(--firts-color);
+    border: none;
+    color: var(--black-color);
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+
+  .card-body {
+    background-color: #151515;
+    width: 100%;
+    padding: 16px;
+    border-radius: 16px;
+    margin-top: 16px;
+    display: none; /* ocultamos el contenido por defecto */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card-body.visible {
+    display: block; 
+    /* mostramos el contenido cuando la clase visible se agrega al elemento */
+}
+
+
+
+
+  
+
 
 /* Plans */
 
