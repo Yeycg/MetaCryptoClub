@@ -723,8 +723,42 @@ text-align: left;
 }
 
 .card1 {
-    background-image: url(./AssetsWeb/Fondo\ pilares\ recursos.jpg.jpg);
+    --opacidad-negro: 0.7;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/card1.jpg");
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card2 {
+    --opacidad-negro: 0.7;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/card2.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card3 {
+    --opacidad-negro: 0.7;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/card3.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.card4 {
+    --opacidad-negro: 0.7;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/card4.png");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card5 {
+    --opacidad-negro: 0.7;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/Card5.jpg");
+    background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -762,8 +796,21 @@ text-align: left;
     /* mostramos el contenido cuando la clase visible se agrega al elemento */
 }
 
+.card-title {
+    font-size: 26px;
+}
 
 
+
+.card-body ul {
+    margin-bottom: 32px;
+    line-height: 1.5;
+  
+}
+
+.card-body ul li {
+    padding-bottom: 8px;
+}
 
   
 
