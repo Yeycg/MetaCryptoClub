@@ -401,7 +401,7 @@ text-align: left;
     margin: auto;
     width: 100%;
     --opacidad-negro: 0.7;
-    background-image: url("./AssetsWeb/Metacrypto-club-mockup.jpg");
+    background-image: url("./AssetsWeb/Darkerbackground.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -453,6 +453,7 @@ text-align: left;
 .pillarsContainer {
     max-width: 100%;
     text-align: center;
+    margin: 48px;
 }
 
  .pillarsTitle {
@@ -471,21 +472,16 @@ text-align: left;
  }
 
  .pillars div {
-    width: 350px;
- }
+    width: 375px;
+    margin: 12px;
+    height: 500px;
+    border-radius: 16px;
+}
+ 
 
 
- .pillars div p{
-    text-align: center;
-    font-size: var(--lg);
-    font-weight: bold;
-  
- }
 
- .pillarsContent p {
-    color: var(--firts-color);
-    font-weight: 500;
- }
+
 
 
  .pillarsClub {
@@ -495,6 +491,16 @@ text-align: left;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+
+ 
+
+ .pillarsCardsTitle{
+    font-size: 42px;
+    color: var(--firts-color);
  }
 
  .pillarsAcademy {
@@ -504,6 +510,9 @@ text-align: left;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
  }
 
  .pillarsResources {
@@ -513,8 +522,21 @@ text-align: left;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
  }
 
+.pillarsContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+ .pillarsContent p {
+    font-size: var(--lg);
+    font-weight: 500;
+    margin-bottom: 2px;
+ }
 
  /*  About Funder */
 
@@ -522,6 +544,8 @@ text-align: left;
  .aboutFunderContainer {
     margin: auto;
     max-width: 1080px;
+    margin-top: 48px;
+    margin-bottom: 48px;
 
 }
  
