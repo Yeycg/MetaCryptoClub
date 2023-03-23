@@ -543,12 +543,16 @@ text-align: left;
 
  .aboutFunderContainer {
     margin: auto;
-    max-width: 1080px;
-    margin-top: 48px;
-    margin-bottom: 48px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 
 }
  
+.aboutFunderText {
+    max-width: 800PX;
+    font-size: var(--lg);
+    font-weight: 500;
+}
 
  .aboutFunderText h3 {
     font-size: var(--Xlg);
@@ -567,10 +571,6 @@ text-align: left;
     padding: 32px;
 }
 
-.aboutFunderText {
-    width: 50%;
-}
-
 .aboutFunderText :nth-child(6) {
     font-weight: bold;
     font-size: var(--lg);
@@ -580,27 +580,38 @@ text-align: left;
 
 .aboutFunderImage img {
     width: 350px;
+    margin: 32px;
 }
 
 /*          Carrucel    */
 
 .carrucelTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
     text-align: center;
     margin: auto;
     margin-top: 32px;
     margin-bottom: 32px;
+    --opacidad-negro: 0.8;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/fondometacrypto.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .carrucelTitle h2 {
-    font-size: var(--Xlg);
-    margin-top: 32px;
+    font-size: var(--XXlg);
+
     
 }
 
-.carrucelTitle p {
+.carrucelTitle > p {
     margin: 16px auto;
-    font-size: 16px;
+    font-size: var(--Elg);
     font-weight: 400;
+    color: var(--firts-color);
 }
 
 .carrucelTitle .simpleBtn {
@@ -623,7 +634,9 @@ text-align: left;
 
 .parrafoFlotante {
     text-align: center;
-    font-size: var(--Elg);
+    font-size: var(--XXlg);
+    font-weight: bold;
+    margin-top: 48px;
 }
 
 .swiper {
