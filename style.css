@@ -728,6 +728,155 @@ text-align: left;
 
 }
 
+/* Contenido academia new */
+
+.curso {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.curso p {
+    font-size: var(--lg);
+    font-weight: 400;
+}
+
+
+
+.curso img{ 
+    width: 300px;
+
+}
+.cursoBasico {
+    margin: 16px;
+    width: 300px;
+    padding: 16px;
+    background-color: #101010;
+    border-radius: 16px;
+    cursor: pointer;
+    height: auto;
+  }
+  
+.contenidoOculto {
+    display: none;
+}
+
+.cursoBasico:hover .contenidoVisible {
+    display: none;
+}
+
+.cursoBasico:hover .contenidoOculto {
+    display: block;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* añadimos una animación */
+
+}
+
+
+.cursoIntermedio {
+    width: 300px;
+    margin: 16px;
+    padding: 16px;
+    background-color: #101010;
+    border-radius: 16px;
+    cursor: pointer;
+    height: auto;
+  }
+  .contenidoOculto2 {
+    display: none;
+  }
+
+  .cursoIntermedio:hover .contenidoVisible2 {
+    display: none;
+}
+
+.cursoIntermedio:hover .contenidoOculto2 {
+    display: block;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* añadimos una animación */
+}
+
+
+.cursoAvanzado {
+    width: 300px;
+    margin: 16px;
+    padding: 16px;
+    background-color: #101010;
+    border-radius: 16px;
+    cursor: pointer;
+    height: auto;
+  }
+  .contenidoOculto3 {
+    display: none;
+  }
+
+  .cursoAvanzado:hover .contenidoVisible3 {
+    display: none;
+}
+
+.cursoAvanzado:hover .contenidoOculto3 {
+    display: block;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* añadimos una animación */
+}
+
+
+.cursoExperto {
+    width: 300px;
+    margin: 16px;
+    padding: 16px;
+    background-color: #101010;
+    border-radius: 16px;
+    cursor: pointer;
+    height: auto;
+  }
+  .contenidoOculto4 {
+    display: none;
+  }
+
+  .cursoExperto:hover .contenidoVisible4 {
+    display: none;
+}
+
+.cursoExperto:hover .contenidoOculto4 {
+    display: block;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* añadimos una animación */
+}
+
+.cursoElite {
+    width: 300px;
+    margin: 16px;
+    padding: 16px;
+    background-color: #101010;
+    border-radius: 16px;
+    cursor: pointer;
+    height: auto;
+  }
+  .contenidoOculto5 {
+    display: none;
+  }
+
+  .cursoElite:hover .contenidoVisible5 {
+    display: none;
+}
+
+.cursoElite:hover .contenidoOculto5 {
+    display: block;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* añadimos una animación */
+}
+
+
+
+
+
+
+ .curso .CursoTitle {
+
+    font-weight: bold;
+    font-size: var(--Elg);
+    
+}
+
+
+
 
 /* .contenido de la academia */
 
