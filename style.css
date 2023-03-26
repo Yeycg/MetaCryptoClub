@@ -138,7 +138,21 @@ nav .btn-login a {
 .logo img {
     margin: auto;
     width: 100px;
+    margin: 5px;
 }
+
+.logo-metacrypto {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-metacrypto .logoMetacrypto {
+width: 52px; 
+}
+
+
 
 
 .menuDesktop {
