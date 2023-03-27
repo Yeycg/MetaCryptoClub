@@ -769,7 +769,7 @@ text-align: left;
     background-color: #101010;
     border-radius: 16px;
     cursor: pointer;
-    height: auto;
+   height: 100%;
   }
   
 .contenidoOculto {
@@ -794,7 +794,7 @@ text-align: left;
     background-color: #101010;
     border-radius: 16px;
     cursor: pointer;
-    height: auto;
+    height: 100%;
   }
   .contenidoOculto2 {
     display: none;
@@ -817,7 +817,7 @@ text-align: left;
     background-color: #101010;
     border-radius: 16px;
     cursor: pointer;
-    height: auto;
+    height: 100%;
   }
   .contenidoOculto3 {
     display: none;
@@ -840,7 +840,7 @@ text-align: left;
     background-color: #101010;
     border-radius: 16px;
     cursor: pointer;
-    height: auto;
+    height: 100%;
   }
   .contenidoOculto4 {
     display: none;
@@ -862,7 +862,7 @@ text-align: left;
     background-color: #101010;
     border-radius: 16px;
     cursor: pointer;
-    height: auto;
+    height: 100%;
   }
   .contenidoOculto5 {
     display: none;
