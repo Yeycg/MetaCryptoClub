@@ -889,156 +889,6 @@ text-align: left;
     
 }
 
-
-
-
-/* .contenido de la academia */
-
-
-
-.cardsContainer {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.cardContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    border-radius: 16px;
-    min-width: 300px;
-    max-width: 300px;
-    margin: 32px;
-}
-
-.card {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 16px;
-    border-radius: 16px;
-}
-
-.card-body {
-    background-color: #151515;
-    width: 100%;
-    padding: 16px;
-    border-radius: 16px;
-    margin-top: 16px;
-    display: none; /* ocultamos el contenido por defecto */
-}
-
-.card-body.visible {
-    display: block; /* mostramos el contenido cuando la clase visible se agrega al elemento */
-}
-
-.card-toggle {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 8px 16px;
-    margin-top: 16px;
-    cursor: pointer;
-}
-
-.card-toggle:hover {
-    background-color: #f2f2f2;
-}
-
-.card1 {
-    --opacidad-negro: 0.7;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/card1.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.card2 {
-    --opacidad-negro: 0.7;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/card2.jpg");
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.card3 {
-    --opacidad-negro: 0.7;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/card3.jpg");
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
-.card4 {
-    --opacidad-negro: 0.7;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/card4.png");
-    background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.card5 {
-    --opacidad-negro: 0.7;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/Card5.jpg");
-    background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.card-body {
-    display: none;
-  }
-  
-  .card-toggle {
-    background-color: var(--firts-color);
-    border: none;
-    color: var(--black-color);
-    padding: 12px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-bottom: 20px;
-    cursor: pointer;
-  }
-
-
-  .card-body {
-    background-color: #151515;
-    width: 100%;
-    padding: 16px;
-    border-radius: 16px;
-    margin-top: 16px;
-    display: none; /* ocultamos el contenido por defecto */
-    transition: opacity 0.3s ease-in-out;
-}
-
-.card-body.visible {
-    display: block; 
-    /* mostramos el contenido cuando la clase visible se agrega al elemento */
-}
-
-.card-title {
-    font-size: 26px;
-}
-
-
-
-.card-body ul {
-    margin-bottom: 32px;
-    line-height: 1.5;
-  
-}
-
-.card-body ul li {
-    padding-bottom: 8px;
-}
-
   
 
 
@@ -1047,6 +897,7 @@ text-align: left;
 .plans {
  
     margin-top: 60px;
+    margin-bottom: 48px;
     
 }
 
@@ -1244,20 +1095,7 @@ text-align: left;
     justify-content: space-between;
 }
 
-.pagosCryptoimg {   
-        animation: rotateSphere 10s infinite linear;
-        transform-style: preserve-3d;
-      }
-      
-      @keyframes rotateSphere {
-        0% {
-          transform: rotateX(0) rotateY(0);
-        }
-        100% {
-          transform: rotateX(360deg) rotateY(360deg);
-        }
-      }
-      
+
 
 /* estilos de los botones en modal */
 
@@ -1408,10 +1246,10 @@ text-align: left;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
-    margin-top: 32px;
-    --opacidad-negro: 0.5;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(./AssetsWeb/Fondo\ programa\ embajadores.jpg);
+    height: 900px;
+    margin-top: 48px;
+    --opacidad-negro: 0.8;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(./AssetsWeb/pexels-fauxels-3184436.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1421,32 +1259,41 @@ text-align: left;
 }
 
 .embajadoresContainer p:nth-child(1) {
-    max-width: 900px;
     margin: 32px auto 16px;
     font-size: var(--XXlg);
+    font-weight: bold;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.6); 
     border-radius: 16px;
+    padding-top: 16px;
 }
 
 .embajadoresContainer .embajadoresSecondTitle {
-    font-size: var(--Elg);
+    font-size: 24px;
     text-align: center;
-    max-width: 900px;
+    font-weight: 400;
+    
     color: #cccc;
 }
 
+.embajadoresBeneficiosContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .embajadoresBeneficios {
+    margin: auto;
+    margin-top: 48px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 900px;
+    width: 72%;
 
 }
 
 .embajadoresBeneficios p {
-    font-size: var(--lg);
+    font-size: var(--Elg);
 }
 
 .embajadoresBeneficios img {

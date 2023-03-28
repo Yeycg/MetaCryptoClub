@@ -616,21 +616,23 @@
 
  <section class="embajadoresContainer"> 
   <div class="embajadoresContent">
-   <p>¿Cómo funciona el programa de embajadores?</p>
+   <p>¿CÒMO FUNCIONA EL PROGRAMA DE EMBAJADORES?</p>
 
    <p class="embajadoresSecondTitle">Todos los miembros que se suscriben a Metacrypto club se convierten automáticamente en embajadores*</p>
-
+     <div class="embajadoresBeneficiosContainer">
    <div class="embajadoresBeneficios">
-    <img src="./AssetsWeb/Icono Comunidad.png" alt="">
+    <img src="./AssetsWeb/link-dynamic-premium.png" alt="">
     <p>Los embajadores pueden compartir su experiencia en Metacrypto y referir a amigos, familiares o seguidores de sus redes sociales.</p>
    </div>
    <div class="embajadoresBeneficios">
-    <img src="./AssetsWeb/Icono Affiliate Marketing.png" alt="">
+    <img src="./AssetsWeb/money-dynamic-premium.png" alt="">
    <p>Por cada suscripción a través de referidos, el embajador recibirá $100, $150 o $200 (según su suscripción) en la stablecoin de su preferencia</p>
     </div>
+  
 
     <p class="embajadoresSmall">*sin letra pequeña!</p>
    </div>
+  </div>
 
  </section>
 
@@ -820,11 +822,20 @@
     
     <script>
       const aboutUs = document.querySelector('.aboutUs');
+const embajadoresContainer = document.querySelector('.embajadoresContainer');
+
 
 window.addEventListener('scroll', function() {
   let scrollPosition = window.scrollY;
   aboutUs.style.backgroundPositionY = -scrollPosition / aboutUs.clientHeight * 90 + 'px'; /* ajusta el valor '50' para cambiar la velocidad */
 });
+
+
+
+// window.addEventListener('scroll', function() {
+//   let scrollPosition = window.scrollY;
+//   embajadoresContainer.style.backgroundPositionY = -scrollPosition / .embajadoresContainer.clientHeight * 90 + 'px'; /* ajusta el valor '50' para cambiar la velocidad */
+// });
 
     </script>
 
