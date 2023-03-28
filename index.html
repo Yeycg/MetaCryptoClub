@@ -214,7 +214,7 @@
 
    <section style="margin: auto;">
 
-    <div class="carrucelTitle">
+    <div class="planesContainer">
     <h2>RESERVA TU PLAZA EN EL FUTURO DE <br> LAS FINANZAS</h2>
        <p>Te enseñamos todo lo que debes saber para convertirte en <br> un experto en criptomonedas desde cero</p>
        <a href="#planesSeccion" class="enlaceSimpleBtn"><p class="simpleBtn">QUIERO MI PLAZA</p></a></div>
@@ -596,7 +596,7 @@
         </div>
         <div class="pagosCrypto">
           <p>Pago Con Cryptomonedas</p>
-          <img src="./AssetsWeb/metodo-de-pago-btc (1).png" alt="" class="pagosCryptoimg">
+          <img src="./AssetsWeb/Untitled design (7).png" alt="" class="pagosCryptoimg">
           <button id="button2"> <a href="https://docs.google.com/forms/d/e/1FAIpQLSdq1aQJ1wAd0EW4pnaxHxGVUSaw0I-JXICVRUuTH5G8mpLwXA/viewform?usp=send_form"> Elegir metodo de pago</a></button>
         </div>
       </div>
@@ -630,22 +630,34 @@
     </div>
   
 
-    <p class="embajadoresSmall">*sin letra pequeña!</p>
+   
    </div>
   </div>
 
  </section>
 
+ 
 
 
-<section class="callToActionContainer">
-  <div class="callToActionContent">
-    <img src="./AssetsWeb/Icono Lineas.png" alt="">
-    <p>¿Quieres dedicarte al mundo crypto y vivir de ello?</p>
-    <p>¡Completa nuestros cursos, descarga nuestros certificados oficiales de finalización y añádelos a tu currículum!
-      También escribimos recomendaciones personales firmadas por nuestro equipo para que tu candidatura destaque del resto.</p>
+
+<section class="callToActionContainer"> 
+   <div class="callToAction">
+  <video autoplay loop muted>
+		<source src="./AssetsWeb/Video-landing.mp4" type="video/mp4">
   </div>
+
+    <div class="overlay"></div>
+
+    <div class="callToAction-content">
+      <h2>¿QUIERES DEDICARTE AL MUNDO CRIPTO Y VIVIR DE ELLO?</h2>
+      <P>La revolución cripto ya está aquí, y no queremos que te quedes fuera. Con nuestra formación estarás preparado <br> para aprovechar al máximo todas las oportunidades que trae esta nueva revolución financiera y tecnológica.</P>
+      <div>
+      <a href="#planesSeccion"><p class="callToActionBoton">  QUIERO COMENZAR </p></a> </div>
+    </div>
+
+
 </section>
+
 
  
   <section class="carrucel"> <!-- Seccion Testimonios en formato carrucel -->
@@ -832,10 +844,10 @@ window.addEventListener('scroll', function() {
 
 
 
-// window.addEventListener('scroll', function() {
-//   let scrollPosition = window.scrollY;
-//   embajadoresContainer.style.backgroundPositionY = -scrollPosition / .embajadoresContainer.clientHeight * 90 + 'px'; /* ajusta el valor '50' para cambiar la velocidad */
-// });
+ window.addEventListener('scroll', function() {
+   let scrollPosition = window.scrollY;
+   embajadoresContainer.style.backgroundPositionY = -scrollPosition / embajadoresContainer.clientHeight * 90 + 'px'; /* ajusta el valor '50' para cambiar la velocidad */
+ });
 
     </script>
 

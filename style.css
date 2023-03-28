@@ -597,6 +597,61 @@ text-align: left;
     margin: 32px;
 }
 
+
+/* planes */
+
+
+.planesContainer {
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 800px;
+text-align: center;
+padding-top: 32px;
+margin: auto;
+margin-top: 32px;
+margin-bottom: 32px;
+--opacidad-negro: 0.8;
+background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/fondometacrypto.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.planesContainer h2 {
+    font-size: var(--XXlg);
+
+    
+}
+
+.planesContainer > p {
+    margin: 16px auto;
+    font-size: var(--Elg);
+    font-weight: 400;
+    color: var(--firts-color);
+}
+
+.pla .simpleBtn {
+
+    margin: 32px auto;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.planesContainer a  {
+    margin: 16px auto;
+    text-decoration: none;
+    color: #000;
+} 
+
+.planesContainer .simpleBtn:hover {
+    color: rgb(10, 10, 10) ;
+  box-shadow: 0 4px 16px rgb(225,202,113);
+  transition: all 0.2s ease;
+
+}
+
+
 /*          Carrucel    */
 
 .carrucelTitle {
@@ -609,7 +664,7 @@ text-align: left;
     margin-top: 32px;
     margin-bottom: 32px;
     --opacidad-negro: 0.8;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/fondometacrypto.png");
+ 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1246,16 +1301,16 @@ text-align: left;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 900px;
     margin-top: 48px;
-    --opacidad-negro: 0.8;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(./AssetsWeb/pexels-fauxels-3184436.jpg);
+    background-image: url(./AssetsWeb/fondoembajadores2.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    align-items: center;
+    background-position: center center;
     background-attachment: fixed;
-
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .embajadoresContainer p:nth-child(1) {
@@ -1308,33 +1363,87 @@ text-align: left;
 }
 
 
+/* Call to action */
+
 
 .callToActionContainer {
-    display: flex;
+    position: relative;
+    height: 80vh;
+    margin-top: 500px;
+  }
+  
+  .callToAction video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+   .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Opacidad del overlay */
+    z-index: 2;
+  }
+  
+  .callToAction-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 16px;
-    height: 800px;
-}
-
-.callToActionContent {
-    max-width: 900px;
+    padding: 50px;
+    color: #fff;
     margin: auto;
-}
+    z-index: 3;
+  }
 
-.callToActionContainer .callToActionContent img {
-    width: 250px;
-}
-
-.callToActionContent  p:nth-child(2) {
-    margin: auto;
+  
+  
+  .callToAction-content h2 {
     font-size: var(--XXlg);
-}
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  
+  .callToAction-content > p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  
+  .callToAction-content a {
+    text-decoration: none;
+ 
+  }
 
-.callToActionContent p:nth-child(3) {
+  .callToActionBoton {
+    padding-top: 18px;
     font-size: var(--lg);
-    line-height: 2;
-}
+    font-weight: bold;
+    height: 36px;
+    width: 231px;
+    text-align: center;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border-radius: 16px;
+    
+  }
+  
+  .callToActionBoton:hover {
+    color: rgb(10, 10, 10) ;
+  box-shadow: 0 4px 16px rgb(225,202,113);
+  transition: all 0.2s ease;
+  }
 
 /* FAQ*/
 
