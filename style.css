@@ -1513,6 +1513,7 @@ background-repeat: no-repeat;
 }
 
 .testimonios__item1 {
+    margin: auto;
  width: 150px;
  height: 150px;
  border-radius: 50%;
@@ -1523,6 +1524,7 @@ background-repeat: no-repeat;
 }
 
 .testimonios__item2 {
+    margin: auto;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -1533,6 +1535,7 @@ background-repeat: no-repeat;
    }
 
    .testimonios__item3 {
+    margin: auto;
     width: 150px;
     height: 150px;
     border-radius: 50%;
