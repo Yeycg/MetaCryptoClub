@@ -1477,7 +1477,7 @@ background-repeat: no-repeat;
 }
 
 .FAQ .contenido {    
-    border: solid 1px var(--firts-color);
+        
     height: 0;
     padding: 0;
     overflow: hidden;
