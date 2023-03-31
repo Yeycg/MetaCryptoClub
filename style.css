@@ -856,6 +856,7 @@ background-repeat: no-repeat;
     transform: translateY(100%);
     width: 100%;
     height: 100%;
+    
   }
   
   .imagen-hover {
@@ -1002,7 +1003,7 @@ background-repeat: no-repeat;
 /* Plans */
 
 .plans {
- 
+   position: relative;
     margin-top: 60px;
     margin-bottom: 48px;
     
