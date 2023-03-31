@@ -802,152 +802,196 @@ background-repeat: no-repeat;
 
 /* Contenido academia new */
 
-.curso {
+.cursos {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin-bottom: 46px;
+}
+
+ .cursosTitle h2 {
+    margin: auto;
+    text-align: center;
+    font-size: var(--XXlg);
+}
+
+
+
+
+.cursosContainer {
+    margin: 48px;
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
     justify-content: center;
-}
-
-.curso p {
-    font-size: var(--lg);
-    font-weight: 400;
-}
-
-
-
-.curso img{ 
-    width: 300px;
-
-}
-.cursoBasico {
-    margin: 16px;
-    width: 300px;
-    padding: 16px;
-    background-color: #101010;
-    border-radius: 16px;
-    cursor: pointer;
-   height: 100%;
-  }
+    align-items: center;
+    width: 100%;
   
-.contenidoOculto {
-    display: none;
-}
-
-.cursoBasico:hover .contenidoVisible {
-    display: none;
-}
-
-.cursoBasico:hover .contenidoOculto {
-    display: block;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* añadimos una animación */
-
 }
 
 
-.cursoIntermedio {
-    width: 300px;
+/* Curso altura y anchura */
+  
+
+.cursosContainer  img{
     margin: 16px;
-    padding: 16px;
-    background-color: #101010;
+    width: 400px;
+    max-height: 800px;
     border-radius: 16px;
     cursor: pointer;
-    height: 100%;
-  }
-  .contenidoOculto2 {
-    display: none;
-  }
-
-  .cursoIntermedio:hover .contenidoVisible2 {
-    display: none;
-}
-
-.cursoIntermedio:hover .contenidoOculto2 {
-    display: block;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* añadimos una animación */
-}
-
-
-.cursoAvanzado {
-    width: 300px;
-    margin: 16px;
-    padding: 16px;
-    background-color: #101010;
-    border-radius: 16px;
-    cursor: pointer;
-    height: 100%;
-  }
-  .contenidoOculto3 {
-    display: none;
-  }
-
-  .cursoAvanzado:hover .contenidoVisible3 {
-    display: none;
-}
-
-.cursoAvanzado:hover .contenidoOculto3 {
-    display: block;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* añadimos una animación */
-}
-
-
-.cursoExperto {
-    width: 300px;
-    margin: 16px;
-    padding: 16px;
-    background-color: #101010;
-    border-radius: 16px;
-    cursor: pointer;
-    height: 100%;
-  }
-  .contenidoOculto4 {
-    display: none;
-  }
-
-  .cursoExperto:hover .contenidoVisible4 {
-    display: none;
-}
-
-.cursoExperto:hover .contenidoOculto4 {
-    display: block;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* añadimos una animación */
-}
-
-.cursoElite {
-    width: 300px;
-    margin: 16px;
-    padding: 16px;
-    background-color: #101010;
-    border-radius: 16px;
-    cursor: pointer;
-    height: 100%;
-  }
-  .contenidoOculto5 {
-    display: none;
-  }
-
-  .cursoElite:hover .contenidoVisible5 {
-    display: none;
-}
-
-.cursoElite:hover .contenidoOculto5 {
-    display: block;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* añadimos una animación */
-}
-
-
-
-
-
-
- .curso .CursoTitle {
-
-    font-weight: bold;
-    font-size: var(--Elg);
     
 }
 
+
+
+/* Curso Basico */
+
+
+.hover-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(100%);
+    width: 100%;
+    height: 100%;
+  }
   
+  .imagen-hover {
+    position: relative;
+    display: inline-block;
+  }
+
+
+  
+  .imagen-hover:hover .hover-img {
+    display: block;
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
+  .imagen-hover:hover img:first-child {
+    transform: scale(1.0);
+    transition: transform 0.5s ease-in-out;
+  }
+
+
+
+  /* Curso Intermedio */
+  
+
+
+  .hover-img2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(100%);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imagen-hover2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .imagen-hover2:hover .hover-img2 {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
+  .imagen-hover2:hover img:first-child {
+    transform: scale(1.0);
+    transition: transform 0.5s ease-in-out;
+  }
+
+
+  /* Curso Avanzado */
+  
+  .hover-img3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(100%);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imagen-hover3 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .imagen-hover3:hover .hover-img3 {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
+  .imagen-hover3:hover img:first-child {
+    transform: scale(1.0);
+    transition: transform 0.5s ease-in-out;
+  }
+
+/* curso Experto  */
+
+.hover-img4 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(100%);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imagen-hover4 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .imagen-hover4:hover .hover-img4 {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
+  .imagen-hover4:hover img:first-child {
+    transform: scale(1.0);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  
+/* curso Elite  */
+
+.hover-img5 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(100%);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imagen-hover5 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .imagen-hover5:hover .hover-img5 {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
+  .imagen-hover5:hover img:first-child {
+    transform: scale(1.0);
+    transition: transform 0.5s ease-in-out;
+  }
 
 
 /* Plans */
