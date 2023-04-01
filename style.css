@@ -362,6 +362,18 @@ text-align: left;
 }
 
 .contributionsIteam div {
+    padding: 6px;
+}
+
+
+.contributionsIteam div:hover {
+    
+  box-shadow: 0 4px 16px rgb(225,202,113);
+  transition: all 0.2s ease;
+border-radius: 16px;
+}
+
+.contributionsIteam div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -385,6 +397,10 @@ text-align: left;
     margin-bottom: 36px;
     background-color: var(--black-color);
 
+}
+
+.seguidoresRedes {
+    font-size: var(--Xlg);
 }
 
 .socialInformation hr {
@@ -1351,20 +1367,18 @@ background-repeat: no-repeat;
   /* Embajadore section*/
 
   .embajadoresContainer {
-    display: flex;
-    flex-direction: column;
+    margin: auto;
     width: 100%;
-    margin-top: 48px;
-    background-image: url(./AssetsWeb/fondoembajadores2.png);
+    --opacidad-negro: 0.7;
+    background-image: url("./AssetsWeb/fondoembajadores2.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position:  center center;
     background-attachment: fixed;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    position: relative;
+    position: relative; 
 }
 
 .embajadoresContainer p:nth-child(1) {

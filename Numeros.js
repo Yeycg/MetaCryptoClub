@@ -1,56 +1,52 @@
-// Función para animar los números
-function animateValue(id, start, end, duration) {
-    var range = end - start;
-    var current = start;
-    var increment = range / (duration / 50); // 50 es el intervalo de tiempo en milisegundos
-    var obj = document.getElementById(id);
-    var timer = setInterval(function () {
-      current += increment;
-      obj.innerHTML = Math.round(current);
-      if (current >= end) {
-        clearInterval(timer);
-        obj.innerHTML = end;
-      }
-    }, 50);
+function animateValue(elem, start, end, duration) {
+  let range = end - start;
+  let current = start;
+  let increment = range / (duration / 8);
+  let startTime = null;
+  const updateAnimation = (timeStamp) => {
+    if (!startTime) startTime = timeStamp;
+    const elapsed = timeStamp - startTime;
+    current = start + increment * elapsed;
+    if (current >= end) {
+      current = end;
+      cancelAnimationFrame(animationId);
+    }
+    elem.innerHTML = Math.round(current);
+    animationId = requestAnimationFrame(updateAnimation);
+  };
+  let animationId = requestAnimationFrame(updateAnimation);
+}
+
+function isScrolledIntoView(elem) {
+  const rect = elem.getBoundingClientRect();
+  const elemTop = rect.top;
+  const elemBottom = rect.bottom;
+  const isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+  return isVisible;
+}
+
+function checkScroll() {
+  const cursosElem = document.getElementById("num-cursos");
+  const modulosElem = document.getElementById("num-modulos");
+  const leccionesElem = document.getElementById("num-lecciones");
+  const horasElem = document.getElementById("num-horas");
+  const seguidoresElem = document.getElementById("num-seguidores");
+
+  if (isScrolledIntoView(cursosElem) && cursosElem.innerHTML === "0") {
+    animateValue(cursosElem, 0, 5, 2000);
   }
-  
-  // Función para determinar si la sección está visible en la pantalla
-  function isScrolledIntoView(elem) {
-    var rect = elem.getBoundingClientRect();
-    var elemTop = rect.top;
-    var elemBottom = rect.bottom;
-  
-    // Solo es visible si está dentro de la ventana visible y no está detrás de ella
-    var isVisible = elemTop < window.innerHeight && elemBottom >= 0;
-    return isVisible;
+  if (isScrolledIntoView(modulosElem) && modulosElem.innerHTML === "0") {
+    animateValue(modulosElem, 0, 21, 3000);
   }
-  
-  // Función que se ejecutará cada vez que se haga scroll
-  function checkScroll() {
-    var cursosElem = document.getElementById("num-cursos");
-    var modulosElem = document.getElementById("num-modulos");
-    var leccionesElem = document.getElementById("num-lecciones");
-    var horasElem = document.getElementById("num-horas");
-    var seguidoresElem = document.getElementById("num-seguidores");
-  
-    // Comprueba si cada sección está visible en la pantalla y si aún no ha sido animada
-    if (isScrolledIntoView(cursosElem) && cursosElem.innerHTML == "0") {
-      animateValue("num-cursos", 0, 5, 5000);
-    }
-    if (isScrolledIntoView(modulosElem) && modulosElem.innerHTML == "0") {
-      animateValue("num-modulos", 0, 21, 5000);
-    }
-    if (isScrolledIntoView(leccionesElem) && leccionesElem.innerHTML == "0") {
-      animateValue("num-lecciones", 0, 125, 5000);
-    }
-    if (isScrolledIntoView(horasElem) && horasElem.innerHTML == "0") {
-      animateValue("num-horas", 0, 25, 5000);
-    }
-    if (isScrolledIntoView(seguidoresElem) && seguidoresElem.innerHTML == "0") {
-      animateValue("num-seguidores", 0, 100000, 5000);
-    }
+  if (isScrolledIntoView(leccionesElem) && leccionesElem.innerHTML === "0") {
+    animateValue(leccionesElem, 0, 125, 4000);
   }
-  
-  // Registra la función checkScroll para el evento scroll
-  window.addEventListener("scroll", checkScroll);
-  
+  if (isScrolledIntoView(horasElem) && horasElem.innerHTML === "0") {
+    animateValue(horasElem, 0, 25, 5000);
+  }
+  if (isScrolledIntoView(seguidoresElem) && seguidoresElem.innerHTML === "0") {
+    animateValue(seguidoresElem, 0, 100000, 6000);
+  }
+}
+
+window.addEventListener("scroll", checkScroll);

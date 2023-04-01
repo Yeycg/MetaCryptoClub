@@ -136,7 +136,7 @@
         <div><span id="num-horas">0</span>
           <p>Horas de clases</p>
         </div>
-        <div>+<span id="num-seguidores">0</span>
+        <div><span class="seguidoresRedes">+</span><span id="num-seguidores">0</span>
           <p>Seguidores en redes sociales</p>
         </div>
       </div>
@@ -292,7 +292,28 @@
          </div>
     </div>
 
-    <div class="plansIteamContainer">       
+    <div class="plansIteamContainer">   
+      
+      
+      <div class="plansItem1">
+        <div class="plansItemBackground">
+         <p>Curso Metacrypto</p>
+         <p><span>$1290</span> pago único</p>
+         <ul>
+           <li>Curso Básico criptomonedas</li>
+           <li>Curso Intermedio</li>
+           <li>Curso Avanzado </li>
+           <li>Curso Experto</li>
+           <li>Curso Élite</li>
+           <li>Rol de embajador ($100 por cada referido!)</li>
+           <li>Certificado de finalización</li>
+         </ul>
+        </div>
+        <button onclick="openModal()" class="bntServicios">SELECCIONAR PLAN</button>
+      </div>
+      
+
+
       <div class="plansItem2">
         <div class="plansItemBackground morePopular">
           <div class="triangle-topleft">
@@ -300,7 +321,7 @@
               Próximamente
             </div>
           </div>
-          <div class="desactive">
+          <div>
          <p>Suscripción Metacrypto</p>
          <p><span>$1790/año</span></p>
          <p>Curso Metacrypto COMPLETO +</p>
@@ -313,35 +334,21 @@
            <li>Carta de recomendación</li>
          </ul>
         </div>
-      </div></div>
+      </div><button onclick="openModal()" class="bntServicios">SELECCIONAR PLAN</button>
+    
+     </div>
        
-      <div class="plansItem1">
-         <div class="plansItemBackground">
-          <p>Curso Metacrypto</p>
-          <p><span>$1290</span> pago único</p>
-          <ul>
-            <li>Curso Básico criptomonedas</li>
-            <li>Curso Intermedio</li>
-            <li>Curso Avanzado </li>
-            <li>Curso Experto</li>
-            <li>Curso Élite</li>
-            <li>Rol de embajador ($100 por cada referido!)</li>
-            <li>Certificado de finalización</li>
-          </ul>
-         </div>
-         <button onclick="openModal()" class="bntServicios">SELECCIONAR PLAN</button>
-       </div>
-       
+
 
 
       <div class="plansItem3 ">
         <div class="plansItemBackground morePopular">
-          <div class="triangle-topleft2">
+          <div class="triangle-topleft2"> 
             <div class="text-block2">
               Próximamente
             </div>
           </div>
-          <div class="desactive">
+          <div>
          <p>Suscripción Metacrypto Premium</p>
          <p> <span>$3490/año</span> </p>        
          <p>Pack COMPLETO de Suscripción Metacrypto +</p>
@@ -356,7 +363,8 @@
         </div>
        
       </div>
-    </div>
+      <button onclick="openModal()" class="bntServicios">SELECCIONAR PLAN</button></div>
+  </div>
     </div>
 
  </section>
@@ -637,7 +645,7 @@ window.addEventListener('scroll', function() {
 
  window.addEventListener('scroll', function() {
    let scrollPosition = window.scrollY;
-   embajadoresContainer.style.backgroundPositionY = -scrollPosition / embajadoresContainer.clientHeight * 90 + 'px'; /* ajusta el valor '50' para cambiar la velocidad */
+   embajadoresContainer.style.backgroundPositionY = scrollPosition / embajadoresContainer.clientHeight * 10 + 'px'; /* ajusta el valor '50' para cambiar la velocidad */
  });
 
     </script>
