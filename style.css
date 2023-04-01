@@ -566,7 +566,7 @@ border-radius: 16px;
     justify-content: end;
 }
  .pillarsContent p {
-    font-size: var(--lg);
+    font-size: var(--Elg);
     font-weight: 500;
     margin-bottom: 2px;
  }
