@@ -1,7 +1,7 @@
 function animateValue(elem, start, end, duration) {
   let range = end - start;
   let current = start;
-  let increment = range / (duration / 2);
+  let increment = range / (duration / 3);
   let startTime = null;
   const updateAnimation = (timeStamp) => {
     if (!startTime) startTime = timeStamp;
