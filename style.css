@@ -134,23 +134,30 @@ nav .btn-login a {
 
 .logo {
     margin: 16px;
-}
-
-.logo img {
-    margin: auto;
     width: 100px;
-    margin: 5px;
-}
-
-.logo-metacrypto {
     align-items: center;
     text-align: center;
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
-.logo-metacrypto .logoMetacrypto {
-width: 52px; 
+.logo img{
+    width: 100px;
+}
+
+.logo .logoMetacrypto {
+    width: 50px;
+    margin: 16px;
+}
+
+.logo-metacrypto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
 }
 
 
@@ -313,7 +320,7 @@ text-align: left;
 .contributions__parrafo1 {
     font-size: var(--Xlg);
     font-weight: 400;
-    line-height: 0.5;
+    line-height: 1.5;
 }
 
 .contributions__parrafo2{
@@ -566,7 +573,7 @@ border-radius: 16px;
     justify-content: end;
 }
  .pillarsContent p {
-    font-size: var(--Elg);
+    font-size: 23px;
     font-weight: 500;
     margin-bottom: 2px;
  }
@@ -601,6 +608,7 @@ border-radius: 16px;
     flex-direction: row;
     flex-wrap: wrap; 
     justify-content: center;
+    align-items: center ;
     padding: 32px;
 }
 
@@ -612,7 +620,7 @@ border-radius: 16px;
 
 
 .aboutFunderImage img {
-    width: 350px;
+    width: 400px;
     margin: 32px;
 }
 
@@ -851,7 +859,7 @@ background-repeat: no-repeat;
 .cursosContainer  img{
     margin: 5px;
     width: 300px;
-    max-height: 900px;
+    max-height: 1000px;
     border-radius: 16px;
     cursor: pointer;
     
@@ -1054,9 +1062,10 @@ background-repeat: no-repeat;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
 }
+
 
 .plansItemBackground {
     background-color: #151515;
@@ -1066,9 +1075,7 @@ background-repeat: no-repeat;
 
 }
 
-.plansItem1 .plansItemBackground {
-    border: solid 4px var(--firts-color);
-}
+
 
 .plansItemBackground p:first-child {
     font-size: var(--lg);
@@ -1108,6 +1115,12 @@ background-repeat: no-repeat;
     margin: 16px auto;
 }
 
+.plansItemBackground:hover {
+    box-shadow: 0 4px 16px rgb(225,202,113);
+    transition: all 0.2s ease;
+  border-radius: 16px;
+
+}
 
 /* Modal */
 
