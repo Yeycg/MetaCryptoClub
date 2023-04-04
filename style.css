@@ -536,6 +536,13 @@ border-radius: 16px;
     justify-content: space-around;
  }
 
+ .pillarsClub:hover {
+    box-shadow: 0 4px 16px rgb(225,202,113);
+    transition: all 0.2s ease;
+  border-radius: 16px;
+
+ }
+
  
 
  .pillarsCardsTitle{
@@ -555,6 +562,13 @@ border-radius: 16px;
     justify-content: space-around;
  }
 
+ .pillarsAcademy:hover {
+    box-shadow: 0 4px 16px rgb(225,202,113);
+    transition: all 0.2s ease;
+  border-radius: 16px;
+
+ }
+
  .pillarsResources {
     width: 100%;
     --opacidad-negro: 0.8;
@@ -565,6 +579,13 @@ border-radius: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+ }
+
+ .pillarsResources:hover {
+    box-shadow: 0 4px 16px rgb(225,202,113);
+    transition: all 0.2s ease;
+  border-radius: 16px;
+
  }
 
 .pillarsContent {
