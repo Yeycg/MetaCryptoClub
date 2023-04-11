@@ -934,7 +934,7 @@ border-radius: 16px;
 
 .cursosContainer  img{
     margin: 5px;
-    width: 300px;
+    width: 330px;
     max-height: 1000px;
     border-radius: 16px;
     cursor: pointer;
@@ -1105,7 +1105,7 @@ border-radius: 16px;
 .plans {
    position: relative;
     margin-top: 90px;
-    margin-bottom: 90px;
+    margin-bottom: 150px;
     
 }
 
