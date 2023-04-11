@@ -443,7 +443,7 @@ border-radius: 16px;
     margin: auto;
     width: 100%;
     --opacidad-negro: 0.7;
-    background-image: url("./AssetsWeb/fond");
+    background-image: url("./AssetsWeb/fondonuevo.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -642,58 +642,6 @@ border-radius: 16px;
 }
 
 
-/* planes */
-
-
-.planesContainer {
-display: flex;
-flex-direction: column;
-justify-content: center;
-height: 800px;
-text-align: center;
-padding-top: 32px;
-margin: auto;
-margin-top: 32px;
-margin-bottom: 32px;
---opacidad-negro: 0.8;
-background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/fondometacrypto.png");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-}
-
-.planesContainer h2 {
-    font-size: var(--XXlg);
-
-    
-}
-
-.planesContainer > p {
-    margin: 16px auto;
-    font-size: 23px;
-    font-weight: 400;
-    color: var(--firts-color);
-}
-
-.pla .simpleBtn {
-
-    margin: 32px auto;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.planesContainer a  {
-    margin: 16px auto;
-    text-decoration: none;
-    color: #000;
-} 
-
-.planesContainer .simpleBtn:hover {
-    color: rgb(10, 10, 10) ;
-  box-shadow: 0 4px 16px rgb(225,202,113);
-  transition: all 0.2s ease;
-
-}
 
 
 /*          Carrucel    */
@@ -841,6 +789,104 @@ background-repeat: no-repeat;
 
 }
 
+/* planes */
+
+
+.planesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+    text-align: center;
+    padding-top: 32px;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    
+    }
+    
+    
+    .planesContainer h2 {
+        font-size: var(--XXlg);
+    
+        
+    }
+    
+    .planesContainer > p {
+        margin: 16px auto;
+        font-size: 23px;
+        font-weight: 400;
+        color: var(--firts-color);
+    }
+    
+    .simpleBtn {
+    
+        margin: 32px auto;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .planesContainer a  {
+        margin: 16px auto;
+        text-decoration: none;
+        color: #000;
+    } 
+    
+    .planesContainer .simpleBtn:hover {
+        color: rgb(10, 10, 10) ;
+      box-shadow: 0 4px 16px rgb(225,202,113);
+      transition: all 0.2s ease;
+    
+    }
+    
+    .planesContainer {
+        position: relative;
+        height: 80vh;
+      
+      }
+      
+      .planesVideo video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+      
+       .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Opacidad del overlay */
+        z-index: 2;
+      }
+      
+      .planesVideoContent {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 50px;
+        color: #fff;
+        margin: auto;
+        z-index: 3;
+      }
+
+      .planesVideoContent > p {
+        margin: 16px auto;
+        font-size: 23px;
+        font-weight: 400;
+        color: var(--firts-color);
+      }
+    
+
 /* Contenido academia new */
 
 .cursos {
@@ -851,7 +897,7 @@ background-repeat: no-repeat;
 }
 
  .cursosTitle h2 {
-    margin: auto;
+    margin: px auto;
     text-align: center;
     font-size: var(--XXlg);
 }
@@ -1045,8 +1091,8 @@ background-repeat: no-repeat;
 
 .plans {
    position: relative;
-    margin-top: 60px;
-    margin-bottom: 48px;
+    margin-top: 90px;
+    margin-bottom: 90px;
     
 }
 
@@ -1115,10 +1161,6 @@ background-repeat: no-repeat;
     
 }
 
-.plansItem1 .plansItemBackground p:first-child{
-    font-size: var(--Xlg);
-
-}
 
 .plansItem1 p:last-child {
     margin: 16px auto;
@@ -1163,6 +1205,7 @@ background-repeat: no-repeat;
  padding: 20px;
  border: solid 5px var(--firts-color);
  position: relative;
+ top: 40px;
 }
 
 .closeModal {
@@ -1322,77 +1365,7 @@ background-repeat: no-repeat;
 }
 
 
- /* Estilos unicos para el mas popular */
-.morePopular {
-    position: relative;
-}
 
-.morePopular p:nth-child(2) {
-    color: var(--firts-color); 
-}
-
-.morePopular p:nth-child(3) {
-    color: var(--white-color); 
-}
-
-.morePopular p:nth-child(4) {
-    color: var(--firts-color); 
-}
-
-
-.triangle-topleft{
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    width: 0;
-    height: 0;
-    border-top: 152px solid var(--black-color);
-    border-left: 104px solid transparent;
-}
-
-.triangle-topleft2 {
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    width: 0;
-    height: 0;
-    border-top: 152px solid var(--black-color);
-    border-left: 104px solid transparent;
-}
-
-
-    
-  
-  .text-block {
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    position: relative;
-    top: -147px;
-    left: -82px;
-    font-weight: bold;
-    padding: 5px;
-    transform: rotate(55deg);
-    align-items: center;
-  }
-
-  .text-block2{
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    position: relative;
-    top: -150px;
-    left: -85px;
-    font-weight: bold;
-    padding: 5px;
-    transform: rotate(55deg);
-    align-items: center;
-  }
-
-
-.desactive {
-    opacity: 0.5;
-}
 
   /* Embajadore section*/
 
@@ -1408,6 +1381,7 @@ background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     position: relative; 
 }
 
@@ -1466,29 +1440,17 @@ background-repeat: no-repeat;
 
 .callToActionContainer {
     position: relative;
-    height: 80vh;
+    height: 100vh;
+    --opacidad-negro: 0.8;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/fondometacrypto.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
   
   }
   
-  .callToAction video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-  }
-  
-   .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Opacidad del overlay */
-    z-index: 2;
-  }
+
   
   .callToAction-content {
     position: relative;
