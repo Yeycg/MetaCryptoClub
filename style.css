@@ -896,7 +896,7 @@ border-radius: 16px;
         margin: 16px auto;
         font-size: 23px;
         font-weight: 400;
-        color: var(--firts-color);
+    
       }
     
 
@@ -1493,6 +1493,7 @@ border-radius: 16px;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 30px;
+    color: var(--firts-color);
   }
   
   .callToAction-content a {
