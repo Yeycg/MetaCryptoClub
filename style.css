@@ -421,13 +421,15 @@ border-radius: 16px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   align-content: center;
 }
 
 .courseContent div {
-   margin: 16px;
+    margin-top: 32px;
+   margin-left: 80px;
+   margin-right: 40px;
    text-align: center;
 }
 
@@ -441,7 +443,7 @@ border-radius: 16px;
     margin: auto;
     width: 100%;
     --opacidad-negro: 0.7;
-    background-image: url("./AssetsWeb/Darkerbackground.png");
+    background-image: url("./AssetsWeb/fond");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -612,7 +614,7 @@ border-radius: 16px;
 .aboutFunderText {
     max-width: 800PX;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 300;
 }
 
  .aboutFunderText h3 {
@@ -631,12 +633,6 @@ border-radius: 16px;
     justify-content: center;
     align-items: center ;
     padding: 32px;
-}
-
-.aboutFunderText :nth-child(6) {
-    font-weight: bold;
-    font-size: var(--lg);
-    color: var(--firts-color);
 }
 
 
