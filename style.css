@@ -922,6 +922,7 @@ border-radius: 16px;
     margin: 48px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -1696,7 +1697,7 @@ border-radius: 16px;
  }
 
 
-@media (max-width: 768px) { 
+@media (max-width: 700px) { 
 
     /* Desktop menu*/
 
@@ -1901,7 +1902,7 @@ border-radius: 16px;
 }
 }
 
-  @media (max-width: 400px) {
+  @media (max-width: 600px) {
 
 
         /* Call To Action*/
@@ -1958,27 +1959,7 @@ border-radius: 16px;
     margin: 32px auto;
   }
 
-  .triangle-topleft {
-    position: absolute;
-    top: 1px;
-    right: 0px;
-    width: 0;
-    height: 0;
-    border-top: 111px solid var(--black-color);
-    border-left: 74px solid transparent;
-  
-  }
 
-  .triangle-topleft2 {
-    position: absolute;
-    top: 1px;
-    right: 0px;
-    width: 0;
-    height: 0;
-    border-top: 111px solid var(--black-color);
-    border-left: 74px solid transparent;
-  
-  }
   .text-block {
     color: white;
     text-align: center;
