@@ -423,7 +423,6 @@ text-align: left;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 32px;
     height: 200px;
     text-align: center;
     background-color: var(--grey-color);
@@ -1199,6 +1198,8 @@ text-align: left;
     font-size: var(--XXlg);
     font-weight: bold;
     text-align: center;
+    margin-top: 46px ;
+    margin-bottom: auto;
 }
 
 .plansHeaderText p:last-child {
