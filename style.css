@@ -111,7 +111,7 @@ h1,h2,h3,h4 {
       color: rgb(10, 10, 10) ;
       box-shadow: 0 4px 16px rgb(225,202,113);
       transition: all 0.2s ease;
-    
+
     }
 
 .btn-mobile-menu {
@@ -133,7 +133,7 @@ nav {
     color: var(--white-color);
     font-weight: bold;
 }
- 
+
 nav .btn-login {
  display: flex;
  justify-content: end;
@@ -169,7 +169,7 @@ nav .btn-login a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+
 
 }
 
@@ -178,7 +178,7 @@ nav .btn-login a {
 
 .menuDesktop {
     display: flex;
-    
+
     align-items: center;
 }
 
@@ -186,7 +186,7 @@ nav .btn-login a {
 .menuDesktop ul {
     display: flex;
     list-style: none;
-    
+
 
 }
 
@@ -226,18 +226,18 @@ nav .btn-login a {
     width: 100%;
     z-index: 9999;
   }
-  
+
   .menuMobile ul {
     font-size: var(--lg);
     margin: 0;
     padding: 0;
     list-style: none;
   }
-  
+
   .menuMobile ul li {
     margin: 16px;
   }
-  
+
   .menuMobile ul a {
     text-align: center;
     text-decoration: none;
@@ -293,11 +293,107 @@ text-align: left;
 }
 
 
+/* New hero image  */
+
+
+.heroVideoContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;  
+    }
+
+
+
+    .heroVideoContainer {
+        position: relative;
+        height: 100vh;
+
+      }
+
+      .heroVideo video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+
+       .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Opacidad del overlay */
+        z-index: 2;
+      }
+
+      .heroVideoContent {
+        position: relative;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+       margin: auto 280px;
+        color: #fff;
+        z-index: 3;
+      }
+
+      .heroVideoContent > p {
+        text-align: left;
+        font-size: 23px;
+        font-weight: 400;
+
+        
+      }
+
+      .heroVideoContent h2 {
+        font-size: 48px;
+      }
+
+      
+
+
+    .heroVideoContainer > p {
+        font-size: 28px;
+        font-weight: 400;
+        color: var(--firts-color);
+    }
+
+
+
+    .heroVideoContent .simpleBtn {
+        margin: 0px;
+        margin-top: 18px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .heroVideoContainer a  {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .heroVideoContainer .simpleBtn:hover {
+        color: rgb(10, 10, 10) ;
+      box-shadow: 0 4px 16px rgb(225,202,113);
+      transition: all 0.2s ease;
+
+    }
+
+
+
+/* arreglar */
+
+
 
 .contributions__items a  {
     text-decoration: none;
     color: #000;
-} 
+}
 
  .contributions__items .simpleBtn:hover {
     color: rgb(10, 10, 10) ;
@@ -305,6 +401,9 @@ text-align: left;
   transition: all 0.2s ease;
 
 }
+
+
+
 
 /* Contribution section*/
 
@@ -314,7 +413,7 @@ text-align: left;
     background-color: var(--black-color);
     color: var(--white-color);
     align-items: center;
-    
+
 
 }
 
@@ -325,7 +424,7 @@ text-align: left;
     justify-content: center;
     align-items: center;
     padding-top: 32px;
-    height: 300px;
+    height: 200px;
     text-align: center;
     background-color: var(--grey-color);
 }
@@ -383,14 +482,6 @@ text-align: left;
 
 .contributionsIteam div {
     padding: 6px;
-}
-
-
-.contributionsIteam div:hover {
-    
-  box-shadow: 0 4px 16px rgb(225,202,113);
-  transition: all 0.2s ease;
-border-radius: 16px;
 }
 
 .contributionsIteam div {
@@ -466,7 +557,7 @@ border-radius: 16px;
     flex-direction: column;
     position: relative;
   }
-  
+
   .aboutUs::before {
     content: "";
     position: absolute;
@@ -477,14 +568,14 @@ border-radius: 16px;
     background-color: rgba(0, 0, 0, var(--opacidad-negro));
     z-index: -1;
   }
-  
+
 
 
 .aboutUs div {
    width: 900px;
    margin-left: 200px;
    margin-top: 200px;
-  
+
 }
 
 .aboutUs div h2 {
@@ -499,7 +590,7 @@ border-radius: 16px;
     font-size: 22px;
     font-weight: 300;
     line-height: 1.5;
-    padding: 16px;
+   
 }
 
 
@@ -517,13 +608,13 @@ border-radius: 16px;
  }
 
  .pillars {
-  
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    
-    
+
+
  }
 
  .pillars div {
@@ -532,7 +623,7 @@ border-radius: 16px;
     height: 500px;
     border-radius: 16px;
 }
- 
+
 
 
 
@@ -551,14 +642,7 @@ border-radius: 16px;
     justify-content: space-around;
  }
 
- .pillarsClub:hover {
-    box-shadow: 0 4px 16px rgb(225,202,113);
-    transition: all 0.2s ease;
-  border-radius: 16px;
 
- }
-
- 
 
  .pillarsCardsTitle{
     font-size: 42px;
@@ -577,12 +661,6 @@ border-radius: 16px;
     justify-content: space-around;
  }
 
- .pillarsAcademy:hover {
-    box-shadow: 0 4px 16px rgb(225,202,113);
-    transition: all 0.2s ease;
-  border-radius: 16px;
-
- }
 
  .pillarsResources {
     width: 100%;
@@ -596,12 +674,6 @@ border-radius: 16px;
     justify-content: space-around;
  }
 
- .pillarsResources:hover {
-    box-shadow: 0 4px 16px rgb(225,202,113);
-    transition: all 0.2s ease;
-  border-radius: 16px;
-
- }
 
 .pillarsContent {
     display: flex;
@@ -623,7 +695,7 @@ border-radius: 16px;
     margin-bottom: 60px;
 
 }
- 
+
 .aboutFunderText {
     max-width: 800PX;
     font-size: 20px;
@@ -642,7 +714,7 @@ border-radius: 16px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center ;
     padding: 32px;
@@ -669,7 +741,7 @@ border-radius: 16px;
     margin-top: 32px;
     margin-bottom: 32px;
     --opacidad-negro: 0.8;
- 
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -678,7 +750,7 @@ border-radius: 16px;
 .carrucelTitle h2 {
     font-size: var(--XXlg);
 
-    
+
 }
 
 .carrucelTitle > p {
@@ -697,7 +769,7 @@ border-radius: 16px;
 .carrucelTitle a  {
     text-decoration: none;
     color: #000;
-} 
+}
 
 .carrucelTitle .simpleBtn:hover {
     color: rgb(10, 10, 10) ;
@@ -751,7 +823,7 @@ border-radius: 16px;
     --opacidad-negro: 0.8;
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/Fondo\ Multiusos.jpg");
     border-radius: 16px;
-    
+
   }
 
   .swiper-wrapper {
@@ -793,7 +865,7 @@ border-radius: 16px;
  .plansIteamContainer a  {
     text-decoration: none;
     color: #000;
-} 
+}
 
 .plansIteamContainer .simpleBtn:hover {
     color: rgb(10, 10, 10) ;
@@ -815,49 +887,49 @@ border-radius: 16px;
     margin: auto;
     margin-top: 32px;
     margin-bottom: 100px;
-    
+
     }
-    
-    
+
+
     .planesContainer h2 {
         font-size: var(--XXlg);
-    
-        
+
+
     }
-    
+
     .planesContainer > p {
         margin: 16px auto;
         font-size: 23px;
         font-weight: 400;
         color: var(--firts-color);
     }
-    
+
     .simpleBtn {
-    
+
         margin: 32px auto;
         font-size: 18px;
         font-weight: bold;
     }
-    
+
     .planesContainer a  {
         margin: 16px auto;
         text-decoration: none;
         color: #000;
-    } 
-    
+    }
+
     .planesContainer .simpleBtn:hover {
         color: rgb(10, 10, 10) ;
       box-shadow: 0 4px 16px rgb(225,202,113);
       transition: all 0.2s ease;
-    
+
     }
-    
+
     .planesContainer {
         position: relative;
-        height: 80vh;
-      
+        height: 50vh;
+
       }
-      
+
       .planesVideo video {
         position: absolute;
         top: 0;
@@ -867,7 +939,7 @@ border-radius: 16px;
         object-fit: cover;
         z-index: 1;
       }
-      
+
        .overlay {
         position: absolute;
         top: 0;
@@ -877,7 +949,7 @@ border-radius: 16px;
         background-color: rgba(0, 0, 0, 0.7); /* Opacidad del overlay */
         z-index: 2;
       }
-      
+
       .planesVideoContent {
         position: relative;
         height: 100%;
@@ -896,9 +968,9 @@ border-radius: 16px;
         margin: 16px auto;
         font-size: 23px;
         font-weight: 400;
-    
+
       }
-    
+
 
 /* Contenido academia new */
 
@@ -926,12 +998,12 @@ border-radius: 16px;
     justify-content: center;
     align-items: center;
     width: 100%;
-  
+
 }
 
 
 /* Curso altura y anchura */
-  
+
 
 .cursosContainer  img{
     margin: 5px;
@@ -939,7 +1011,7 @@ border-radius: 16px;
     max-height: 1000px;
     border-radius: 16px;
     cursor: pointer;
-    
+
 }
 
 
@@ -957,9 +1029,9 @@ border-radius: 16px;
     transform: translateY(100%);
     width: 100%;
     height: 100%;
-    
+
   }
-  
+
   .imagen-hover {
     display: none;
   }
@@ -970,13 +1042,13 @@ border-radius: 16px;
   }
 
 
-  
+
   .imagen-hover:hover .hover-img {
     display: block;
     opacity: 1;
     transform: translateY(0%);
   }
-  
+
   .imagen-hover:hover img:first-child {
     transform: scale(1.0);
     transition: transform 0.5s ease-in-out;
@@ -985,7 +1057,7 @@ border-radius: 16px;
 
 
   /* Curso Intermedio */
-  
+
 
 
   .hover-img2 {
@@ -998,17 +1070,17 @@ border-radius: 16px;
     width: 100%;
     height: 100%;
   }
-  
+
   .imagen-hover2 {
     position: relative;
     display: inline-block;
   }
-  
+
   .imagen-hover2:hover .hover-img2 {
     opacity: 1;
     transform: translateY(0%);
   }
-  
+
   .imagen-hover2:hover img:first-child {
     transform: scale(1.0);
     transition: transform 0.5s ease-in-out;
@@ -1016,7 +1088,7 @@ border-radius: 16px;
 
 
   /* Curso Avanzado */
-  
+
   .hover-img3 {
     position: absolute;
     left: 0;
@@ -1027,17 +1099,17 @@ border-radius: 16px;
     width: 100%;
     height: 100%;
   }
-  
+
   .imagen-hover3 {
     position: relative;
     display: inline-block;
   }
-  
+
   .imagen-hover3:hover .hover-img3 {
     opacity: 1;
     transform: translateY(0%);
   }
-  
+
   .imagen-hover3:hover img:first-child {
     transform: scale(1.0);
     transition: transform 0.5s ease-in-out;
@@ -1055,23 +1127,23 @@ border-radius: 16px;
     width: 100%;
     height: 100%;
   }
-  
+
   .imagen-hover4 {
     position: relative;
     display: inline-block;
   }
-  
+
   .imagen-hover4:hover .hover-img4 {
     opacity: 1;
     transform: translateY(0%);
   }
-  
+
   .imagen-hover4:hover img:first-child {
     transform: scale(1.0);
     transition: transform 0.5s ease-in-out;
   }
 
-  
+
 /* curso Elite  */
 
 .hover-img5 {
@@ -1084,17 +1156,17 @@ border-radius: 16px;
     width: 100%;
     height: 100%;
   }
-  
+
   .imagen-hover5 {
     position: relative;
     display: inline-block;
   }
-  
+
   .imagen-hover5:hover .hover-img5 {
     opacity: 1;
     transform: translateY(0%);
   }
-  
+
   .imagen-hover5:hover img:first-child {
     transform: scale(1.0);
     transition: transform 0.5s ease-in-out;
@@ -1107,16 +1179,20 @@ border-radius: 16px;
    position: relative;
     margin-top: 90px;
     margin-bottom: 150px;
-    
+
 }
 
 .plansHeader {
     max-width: 1080px;
     margin: auto;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plansHeader img {
+    width: 200px;
 }
 
 .plansHeaderText p:nth-child(1) {
@@ -1139,7 +1215,7 @@ border-radius: 16px;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: center;
 
 }
 
@@ -1149,6 +1225,7 @@ border-radius: 16px;
     border: solid 1px  #cccc;
     border-radius: 16px;
     padding: 12px;
+    margin: 16px;
 
 }
 
@@ -1173,7 +1250,7 @@ border-radius: 16px;
     text-align: left;
     line-height: 2;
     color: #cccc;
-    
+
 }
 
 
@@ -1271,7 +1348,7 @@ border-radius: 16px;
 
 .pagosTarjeta .pagosTarjeta1 {
     width: 300px;
-    
+
 }
 
 .pagosTarjeta1 {
@@ -1281,7 +1358,7 @@ border-radius: 16px;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
   }
-  
+
   @keyframes moverArribaAbajo {
     from {
       transform: translateY(0);
@@ -1290,9 +1367,9 @@ border-radius: 16px;
       transform: translateY(10px);
     }
   }
-  
-  
-  
+
+
+
 
 
 .pagosTarjeta .pagosTarjeta2 {
@@ -1328,7 +1405,7 @@ border-radius: 16px;
     text-decoration: none;
     color: inherit;
    }
-   
+
 
 
 #button2 a {
@@ -1388,16 +1465,16 @@ border-radius: 16px;
     margin: auto;
     width: 100%;
     --opacidad-negro: 0.7;
-    background-image: url("./AssetsWeb/fondoembajadores2.png");
+    background-image: url("./AssetsWeb/fondoembajadores3.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position:  center center;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative; 
+    position: relative;
 }
 
 .embajadoresContainer p:nth-child(1) {
@@ -1413,7 +1490,7 @@ border-radius: 16px;
     font-size: 24px;
     text-align: center;
     font-weight: 400;
-    
+
     color: #cccc;
 }
 
@@ -1455,18 +1532,18 @@ border-radius: 16px;
 
 .callToActionContainer {
     position: relative;
-    height: 100vh;
+    height: 60vh;
     --opacidad-negro: 0.8;
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./AssetsWeb/fondometacrypto.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 
-  
-  }
-  
 
-  
+  }
+
+
+
   .callToAction-content {
     position: relative;
     height: 100%;
@@ -1481,14 +1558,14 @@ border-radius: 16px;
     z-index: 3;
   }
 
-  
-  
+
+
   .callToAction-content h2 {
     font-size: var(--XXlg);
     margin-top: 0;
     margin-bottom: 30px;
   }
-  
+
   .callToAction-content > p {
     font-size: 24px;
     font-weight: 400;
@@ -1496,10 +1573,10 @@ border-radius: 16px;
     margin-bottom: 30px;
     color: var(--firts-color);
   }
-  
+
   .callToAction-content a {
     text-decoration: none;
- 
+
   }
 
   .callToActionBoton {
@@ -1512,9 +1589,9 @@ border-radius: 16px;
     background-color: var(--white-color);
     color: var(--black-color);
     border-radius: 16px;
-    
+
   }
-  
+
   .callToActionBoton:hover {
     color: rgb(10, 10, 10) ;
   box-shadow: 0 4px 16px rgb(225,202,113);
@@ -1523,7 +1600,7 @@ border-radius: 16px;
 
 /* FAQ*/
 
-.FAQ { 
+.FAQ {
     margin: auto;
     width: 90%;
     max-width: 120em;
@@ -1552,8 +1629,8 @@ border-radius: 16px;
     font-size: var(--md);
 }
 
-.FAQ .contenido {    
-        
+.FAQ .contenido {
+
     height: 0;
     padding: 0;
     overflow: hidden;
@@ -1640,7 +1717,7 @@ border-radius: 16px;
         margin: auto;
         padding-top: 32px;
         font-size: var(--sm);
- 
+
     }
 
     .redes-sociales-container  p:nth-child(1) {
@@ -1697,7 +1774,7 @@ border-radius: 16px;
  }
 
 
-@media (max-width: 700px) { 
+@media (max-width: 700px) {
 
     /* Desktop menu*/
 
@@ -1722,7 +1799,7 @@ border-radius: 16px;
     }
 
     /* Menu Mobile*/
-  
+
     .btn-mobile-menu {
       display: block;
     }
@@ -1755,11 +1832,11 @@ border-radius: 16px;
         font-size: var(--md); }
 
     /*course Content */
-    
+
     .courseContent {
         flex-direction: column;
     }
-  
+
     /* About Us */
     .aboutUs  {
             margin: auto;
@@ -1780,7 +1857,7 @@ border-radius: 16px;
     .aboutUs div p {
         font-size: var(--md);
     }
-  
+
     /* About funder*/
 
 
@@ -1828,8 +1905,8 @@ border-radius: 16px;
 
   }
 
-  
-    /*Embajadores*/ 
+
+    /*Embajadores*/
 
     .embajadoresContainer p:nth-child(1) {
         font-size: var(--lg);
@@ -1860,32 +1937,32 @@ border-radius: 16px;
         .callToActionContainer {
             padding: 10px;
         }
-    
+
         .callToActionContainer .callToActionContent img {
             width: 180px;
         }
-    
+
         .callToActionContent {
             width: 600px;
         }
-    
+
         .callToActionContent  p:nth-child(2) {
             font-size: var(--Xlg);
             width: 500px;
         }
-    
+
         .callToActionContent p:nth-child(3) {
             font-size: var(--md);
-           
+
         }
-    
+
           /*FAQ*/
 
     .FAQ .FAQ-titulo {
         font-size: var(--sm);
     }
-    
-    .FAQ .contenido {    
+
+    .FAQ .contenido {
         font-size: 12px;
     }
 
@@ -1910,23 +1987,23 @@ border-radius: 16px;
         .callToActionContainer {
             padding: 6px;
         }
-    
+
         .callToActionContainer .callToActionContent img {
             width: 150px;
         }
-    
+
         .callToActionContent {
             width: 300px;
         }
-    
+
         .callToActionContent  p:nth-child(2) {
             font-size: var(--Elg);
             width: 300px;
         }
-    
+
         .callToActionContent p:nth-child(3) {
             font-size: var(--md);
-           
+
         }
 
 
@@ -1944,17 +2021,17 @@ border-radius: 16px;
     }
 
     /* Carrucel slider */
- 
+
 
     .slider-mobile {
         display: block;
     }
-    
+
 
   /* Plans*/
 
 
-  .plansItemBackground { 
+  .plansItemBackground {
     width: 80%;
     margin: 32px auto;
   }
@@ -1990,9 +2067,9 @@ border-radius: 16px;
     .terminos {
         width: 290px;
     }
-  
+
     /* Modal */
-    
+
 .modalContent h2 {
     font-size: var(--lg);
 
@@ -2020,7 +2097,7 @@ border-radius: 16px;
 .pagosTarjeta .pagosTarjeta1 {
     width: 100px;
     animation: 0.1s ease infinite  up-down ;
-    
+
 }
 
 
@@ -2071,7 +2148,7 @@ border-radius: 16px;
 }
 
 #button1, #button2{
-    
+
     margin-top: 16px;
     font-size: 10px;
     font-weight: bold;
