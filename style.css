@@ -2161,4 +2161,191 @@ text-align: left;
 
   }
 
+  @media (max-width: 600px) {
+        
+    /* Body */
+
+    body {
+        width: 100vw;
+    }
+
+    /* Menu */
+
+    .simpleBtn--login {
+        width: 90px;
+        height: 30px;
+        padding-top: 11px;
+        margin-left: 8px;
+        font-size: var(--spm);
+        margin-right: 16px;
+
+    }
+
+
+    .logo img{
+        width: 100px;
+    }
+
+/* Hero Image */
+
+.heroVideoContent {
+    margin: auto;
+    margin-left: 26px;
+}
+
+.heroVideoContent > p {
+
+   font-size: 16px;
+}
+
+.heroVideoContent h2 {
+ font-size:  26px ;
+}
+
+
+.heroVideoContent  .simpleBtn {
+    font-size: 12px;
+}
+
+
+/* Contribucion */ 
+
+.contributions__parrafo1, .contributions__parrafo2 {
+    font-size: 15px;
+    padding: 4px;
+}
+
+
+.contributions__items h2 {
+    font-size: 26px; }
+
+
+    .socialInformation hr {
+        height: 1px;
+        width: 90%; 
+        align-items: center;
+    }
+
+
+ /* About Us*/ 
+
+ .aboutUs div h2 {
+    font-size: 26px;
+    margin: 26px;
+
+}
+
+.aboutUs div p {
+    font-size: 12px;
+}
+
+/* Pillars MetaCrypto*/ 
+
+.pillarsTitle {
+    font-size: 26px; 
+}
+
+.pillars div {
+    width: 300px;
+    border-radius: 16px;
+}
+
+.pillarsCardsTitle {
+
+    font-size: 26px; 
+}
+
+.pillarsContent p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* About Funder */
+
+.aboutFunderText h3 {
+    font-size: 26px; 
+}
+
+.aboutFunderText {
+    font-size: 11px; 
+
+}
+
+/* Planes */
+
+.planesContainer h2 {
+    font-size: 10px;
+}
+
+.planesVideoContent > p {
+    font-size: 12px; 
+}
+
+.cursosTitle h2 {
+    font-size: 26px;
+    margin-bottom: 26px; 
+}
+
+
+
+ /* Cursos*/  
+ 
+ .cursosContainer {
+    margin: 0;
+ }
+
+
+ /* planes */
+
+
+.plansHeaderText p:nth-child(1) {
+    font-size: 26px; }
+
+
+/* Embajadores*/ 
+
+.embajadoresContainer {
+    height: 670px; 
+}
+
+.embajadoresContainer p:nth-child(1) {
+        font-size: 20px; 
+}
+
+.embajadoresContainer .embajadoresSecondTitle {
+    font-size: 11px;
+}
+
+.embajadoresBeneficios {
+    flex-wrap: wrap;
+ }
+
+ .embajadoresBeneficios p {
+    font-size: 11px;
+}
+
+
+/*Call to action */
+
+
+.callToAction-content h2 {
+    font-size: 16px; 
+}
+
+
+.callToAction-content > p {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.callToActionBoton {
+    width: 150px;
+    font-size: 11px;
+
+    height: 30px; }
+
+
+
+}
+
 

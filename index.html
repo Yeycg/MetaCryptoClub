@@ -639,16 +639,19 @@ const embajadoresContainer = document.querySelector('.embajadoresContainer');
 
 
 window.addEventListener('scroll', function() {
-  let scrollPosition = window.scrollY;
-  aboutUs.style.backgroundPositionY = -scrollPosition / aboutUs.clientHeight * 90 + 'px'; /* ajusta el valor '50' para cambiar la velocidad */
+  if (window.innerWidth >= 600) {
+    let scrollPosition = window.scrollY;
+    aboutUs.style.backgroundPositionY = -scrollPosition / aboutUs.clientHeight * 90 + 'px';
+  }
 });
 
 
-
  window.addEventListener('scroll', function() {
+  if(Window.innerWidth >=600 ){
    let scrollPosition = window.scrollY;
    embajadoresContainer.style.backgroundPositionY = scrollPosition / embajadoresContainer.clientHeight * 10 + 'px'; /* ajusta el valor '50' para cambiar la velocidad */
- });
+ }
+});
 
     </script>
 
